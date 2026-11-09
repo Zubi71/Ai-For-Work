@@ -11,7 +11,7 @@ export default function About() {
   return (
     <>
       <Seo
-        title="About AidForWork — Free AI Tools for Working Professionals"
+        title="About AidForWork — Free AI Tools for Professionals"
         description="AidForWork builds free, client-side AI tools for teachers, accountants and real estate agents. No sign-up, no account, and your data never leaves your device."
         path="/about"
         faq={FAQ}

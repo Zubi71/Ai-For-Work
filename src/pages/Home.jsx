@@ -13,26 +13,28 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Free AI Tools for Teachers, Accountants & Real Estate Agents | AidForWork"
-        description="AidForWork offers free AI tools for teachers, accountants and real estate agents — lesson plan generator, grading and quiz generator, listing description generator and CRM cost calculator. No sign-up, instant results."
+        title="Free AI Tools: Teachers, Accountants & Agents | AidForWork"
+        description="Free AI tools that save working professionals time. Get drafts in minutes instead of hours — no sign-up, no account, and your data stays on your device."
         path="/"
         faq={HOME_FAQ}
       />
       <section className="hero">
         <div className="container">
+          <p className="eyebrow">Free · No sign-up · Runs in your browser</p>
           <h1>Free AI tools that save working professionals time</h1>
           <p className="lead">AidForWork builds practical AI tools for teachers, accountants and real estate agents. Generate a lesson plan, a quiz, a property listing or a CRM cost estimate in under a minute — free, with no sign-up.</p>
           <div className="hero-cta">
             <Link className="btn" to="/tools/ai-lesson-plan-generator">Try the lesson plan generator</Link>
             <Link className="btn btn-secondary" to="/guides">Read the guides</Link>
           </div>
+          <p className="hero-note">No sign-up · Free forever · Your data stays on your device</p>
         </div>
       </section>
 
       <section className="section" aria-labelledby="tools-heading">
         <div className="container">
           <p className="eyebrow">Free tools</p>
-          <h2 id="tools-heading">Four tools, built for real work</h2>
+          <h2 id="tools-heading">Tools built for real work</h2>
           <p>Each tool runs entirely in your browser. Type in your details, get a finished draft, then copy, download or print it.</p>
           <div className="card-grid">
             <article className="card">
@@ -69,6 +71,7 @@ export default function Home() {
           <h2 id="who-heading">Built for the people who do the work</h2>
           <div className="audience-grid">
             <div className="audience">
+              <span className="tag">For teachers</span>
               <h3>Teachers</h3>
               <p>Planning takes hours every week. Our tools handle the first draft so you can focus on teaching.</p>
               <ul>
@@ -79,6 +82,7 @@ export default function Home() {
               <Link to="/guides/ai-tools-for-teachers">AI tools for teachers →</Link>
             </div>
             <div className="audience">
+              <span className="tag">For accountants</span>
               <h3>Accountants</h3>
               <p>Software choices and costs add up. Compare options clearly before you commit your firm or your clients.</p>
               <ul>
@@ -89,6 +93,7 @@ export default function Home() {
               <Link to="/guides/ai-tools-for-accountants">AI tools for accountants →</Link>
             </div>
             <div className="audience">
+              <span className="tag">For real estate agents</span>
               <h3>Real estate agents</h3>
               <p>Every listing needs good copy, fast. Generate a strong first draft and polish it in your own voice.</p>
               <ul>

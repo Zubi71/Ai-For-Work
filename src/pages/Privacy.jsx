@@ -11,8 +11,8 @@ export default function Privacy() {
   return (
     <>
       <Seo
-        title="Privacy Policy | AidForWork"
-        description="AidForWork privacy policy: our tools run entirely in your browser, we do not collect what you type, and we do not sell personal information."
+        title="Privacy Policy: Your Data Stays on Your Device | AidForWork"
+        description="AidForWork privacy policy: our tools run entirely in your browser, we do not collect what you type, and we never sell personal information. Read it here."
         path="/privacy-policy"
         faq={FAQ}
         breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Privacy Policy', path: '/privacy-policy' }]}

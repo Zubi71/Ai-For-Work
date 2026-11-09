@@ -13,8 +13,8 @@ export default function GuideTeachers() {
   return (
     <>
       <Seo
-        title="AI Tools for Teachers: Save Hours on Planning & Grading | AidForWork"
-        description="How teachers can use AI tools for lesson planning, grading and quizzes — which tools save real time, how to check their output, and what to avoid with student data."
+        title="AI Tools for Teachers: Plan, Grade & Quiz | AidForWork"
+        description="How teachers can use AI tools for lesson planning, grading and quizzes — which tools save real time, how to check their output, and what to avoid in class."
         path="/guides/ai-tools-for-teachers"
         faq={FAQ}
         breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Guides', path: '/guides' }, { name: 'AI Tools for Teachers', path: '/guides/ai-tools-for-teachers' }]}

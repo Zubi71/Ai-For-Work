@@ -11,8 +11,8 @@ export default function Terms() {
   return (
     <>
       <Seo
-        title="Terms of Use | AidForWork"
-        description="AidForWork terms of use: free tools provided as-is, outputs are starting drafts to be reviewed, and example prices must be confirmed with vendors."
+        title="AidForWork Terms of Use: Free Tools Provided As-Is"
+        description="AidForWork terms of use: free tools provided as-is, outputs are starting drafts to review, and example prices must be confirmed with the vendor first."
         path="/terms"
         faq={FAQ}
         breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Terms of Use', path: '/terms' }]}

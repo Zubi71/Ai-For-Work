@@ -31,8 +31,8 @@ export default function ListingGenerator() {
   return (
     <>
       <Seo
-        title="Free Listing Description Generator for Real Estate Agents | AidForWork"
-        description="Write a polished property listing in seconds — headline, description and highlights from your property details. Free, no sign-up, professional, friendly or luxury tone."
+        title="Free Listing Description Generator for Agents | AidForWork"
+        description="Write a polished property listing in seconds — headline, description and highlights from your property details. Free, no sign-up, and ready to share today."
         path="/tools/listing-description-generator"
         faq={FAQ}
         breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Listing Description Generator', path: '/tools/listing-description-generator' }]}

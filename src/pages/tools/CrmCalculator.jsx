@@ -31,8 +31,8 @@ export default function CrmCalculator() {
   return (
     <>
       <Seo
-        title="Free CRM Cost Calculator — Monthly & Annual Costs | AidForWork"
-        description="Calculate what a CRM really costs your team: monthly and annual cost, first-year total and cost per user, with an example comparison of HubSpot, Zoho and Pipedrive. Free, no sign-up."
+        title="Free CRM Cost Calculator for Small Business | AidForWork"
+        description="Work out what a CRM really costs your team — monthly and annual cost, first-year total and cost per user, with an example comparison. Free, no sign-up."
         path="/tools/crm-cost-calculator"
         faq={FAQ}
         breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'CRM Cost Calculator', path: '/tools/crm-cost-calculator' }]}

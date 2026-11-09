@@ -34,7 +34,7 @@ export default function QuizGenerator() {
     <>
       <Seo
         title="Free AI Quiz Generator with Answer Key | AidForWork"
-        description="Generate a quiz on any topic in seconds — multiple choice, true/false or short answer, with an answer key. Free, no sign-up, print or download the result."
+        description="Create a quiz on any topic in seconds — multiple choice, true/false or short answer, with a ready answer key. Free, no sign-up, print or download it today."
         path="/tools/ai-grading-quiz-generator"
         faq={FAQ}
         breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'AI Grading & Quiz Generator', path: '/tools/ai-grading-quiz-generator' }]}

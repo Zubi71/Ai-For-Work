@@ -13,8 +13,8 @@ export default function GuideAgents() {
   return (
     <>
       <Seo
-        title="AI Tools for Real Estate Agents: Listings, Follow-Up & Pricing | AidForWork"
-        description="How real estate agents can use AI for listing copy, follow-up and pricing research — where it saves time, where it can mislead buyers, and how to keep listings honest."
+        title="AI Tools for Real Estate Agents: List Faster | AidForWork"
+        description="How real estate agents can use AI for listing copy, follow-up and pricing research — where it saves time, where it can mislead, and how to stay honest."
         path="/guides/ai-tools-for-real-estate-agents"
         faq={FAQ}
         breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Guides', path: '/guides' }, { name: 'AI Tools for Real Estate Agents', path: '/guides/ai-tools-for-real-estate-agents' }]}

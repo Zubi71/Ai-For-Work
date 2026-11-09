@@ -13,8 +13,8 @@ export default function GuideAccountants() {
   return (
     <>
       <Seo
-        title="AI Tools for Accountants: What Actually Helps a Small Firm | AidForWork"
-        description="What AI can genuinely help with in a small accounting firm — bookkeeping, reconciliation, client messages and software costs — plus data safety rules and how to avoid overspending."
+        title="AI Tools for Accountants: Save Time, Cut Costs | AidForWork"
+        description="What AI can genuinely help with in a small accounting firm — bookkeeping, reconciliation, client messages and software costs — plus data safety rules."
         path="/guides/ai-tools-for-accountants"
         faq={FAQ}
         breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Guides', path: '/guides' }, { name: 'AI Tools for Accountants', path: '/guides/ai-tools-for-accountants' }]}

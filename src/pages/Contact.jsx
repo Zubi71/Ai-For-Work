@@ -30,8 +30,8 @@ export default function Contact() {
   return (
     <>
       <Seo
-        title="Contact AidForWork"
-        description="Contact AidForWork with questions, corrections or suggestions. Email hello@aidforwork.com or use the contact form."
+        title="Contact AidForWork — Questions, Feedback & Support"
+        description="Contact AidForWork with questions, corrections or suggestions about our free AI tools. Email hello@aidforwork.com or use the contact form on this page."
         path="/contact"
         faq={FAQ}
         breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Contact', path: '/contact' }]}

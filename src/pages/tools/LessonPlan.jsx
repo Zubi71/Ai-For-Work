@@ -33,7 +33,7 @@ export default function LessonPlan() {
     <>
       <Seo
         title="Free AI Lesson Plan Generator for Teachers | AidForWork"
-        description="Generate a structured lesson plan in seconds — objectives, warm-up, timed activities, assessment and homework. Free, no sign-up, works for any grade and subject."
+        description="Generate a structured lesson plan in seconds — objectives, warm-up, timed activities, assessment and homework. Free for any grade and subject, no sign-up."
         path="/tools/ai-lesson-plan-generator"
         faq={FAQ}
         breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'AI Lesson Plan Generator', path: '/tools/ai-lesson-plan-generator' }]}

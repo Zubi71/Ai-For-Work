@@ -11,8 +11,8 @@ export default function Guides() {
   return (
     <>
       <Seo
-        title="Guides: Using AI Tools at Work | AidForWork"
-        description="Practical guides for teachers, accountants and real estate agents on using AI tools well — which tools are worth your time, how to check their output, and what to avoid."
+        title="Free Practical Guides to AI Tools at Work | AidForWork"
+        description="Short, practical guides for teachers, accountants and real estate agents on using AI tools well at work — which tools are worth your time and what to avoid."
         path="/guides"
         faq={FAQ}
         breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Guides', path: '/guides' }]}

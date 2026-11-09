@@ -61,6 +61,38 @@ Pure logic lives in `src/lib/tools.js` (also Node-testable):
 - Quiz/lesson outputs are template-based drafts, not AI-model output — labelled as drafts in the UI and guides; accuracy review is the user's job (stated on tool pages).
 - `dist/` and `node_modules/` are present locally but gitignored; do not commit them.
 
+## Polish pass 2026-11-09 (user feedback: more professional, like the first one-page preview)
+- **Palette UNCHANGED:** indigo #4F46E5, navy #0F172A, teal #14B8A6, white background, logo.webp. No new colours.
+- **Full width site-wide (same fix as portfolio 2026-11-03):** removed the centred 1120px `.container` — header, hero, tool pages, guides, footer now span the full viewport with 32px side margins on desktop, 20px on mobile. Card grids: 2 cols ≥640px, 3 cols ≥1200px, 4 cols ≥1400px. Only long article prose is capped at a readable ~75ch measure (`.guide-text`, `.article`/`.page` direct text children).
+- **Professional polish:** homepage hero is now a deep indigo gradient band (#4F46E5 → #4338CA → #1E1B4B) with white headline, teal eyebrow, white primary button and a trust line ("No sign-up · Free forever · Your data stays on your device"); cards/audience cards have subtle shadows + hover lift; sticky header with logo.webp (width/height set, no CLS) + soft shadow; tool-hero deepened to #E0E7FF with a bottom border. All 13 routes, all 4 tools (logic in `src/lib/tools.js` untouched), guides, FAQs and JSON-LD intact. No new dependencies, no Google Fonts, WebP images only.
+- **Meta titles (50–60 chars) + descriptions (150–160 chars), rewritten for all 13 routes** — general homepage wording (no tool counts, no tool-name lists, so it stays correct as tools are added), keyword-first, every page unique. Verified from the source files AND in a real headless Chromium (titles below are the rendered `document.title` values).
+
+| Route | Title (chars) | Description (chars) |
+|---|---|---|
+| `/` | Free AI Tools: Teachers, Accountants & Agents \| AidForWork (58) | Free AI tools that save working professionals time. Get drafts in minutes instead of hours — no sign-up, no account, and your data stays on your device. (152) |
+| `/tools/ai-lesson-plan-generator` | Free AI Lesson Plan Generator for Teachers \| AidForWork (55) | Generate a structured lesson plan in seconds — objectives, warm-up, timed activities, assessment and homework. Free for any grade and subject, no sign-up. (154) |
+| `/tools/ai-grading-quiz-generator` | Free AI Quiz Generator with Answer Key \| AidForWork (51) | Create a quiz on any topic in seconds — multiple choice, true/false or short answer, with a ready answer key. Free, no sign-up, print or download it today. (155) |
+| `/tools/listing-description-generator` | Free Listing Description Generator for Agents \| AidForWork (58) | Write a polished property listing in seconds — headline, description and highlights from your property details. Free, no sign-up, and ready to share today. (155) |
+| `/tools/crm-cost-calculator` | Free CRM Cost Calculator for Small Business \| AidForWork (56) | Work out what a CRM really costs your team — monthly and annual cost, first-year total and cost per user, with an example comparison. Free, no sign-up. (151) |
+| `/guides` | Free Practical Guides to AI Tools at Work \| AidForWork (54) | Short, practical guides for teachers, accountants and real estate agents on using AI tools well at work — which tools are worth your time and what to avoid. (156) |
+| `/guides/ai-tools-for-teachers` | AI Tools for Teachers: Plan, Grade & Quiz \| AidForWork (54) | How teachers can use AI tools for lesson planning, grading and quizzes — which tools save real time, how to check their output, and what to avoid in class. (155) |
+| `/guides/ai-tools-for-accountants` | AI Tools for Accountants: Save Time, Cut Costs \| AidForWork (59) | What AI can genuinely help with in a small accounting firm — bookkeeping, reconciliation, client messages and software costs — plus data safety rules. (150) |
+| `/guides/ai-tools-for-real-estate-agents` | AI Tools for Real Estate Agents: List Faster \| AidForWork (57) | How real estate agents can use AI for listing copy, follow-up and pricing research — where it saves time, where it can mislead, and how to stay honest. (151) |
+| `/about` | About AidForWork — Free AI Tools for Professionals (50) | AidForWork builds free, client-side AI tools for teachers, accountants and real estate agents. No sign-up, no account, and your data never leaves your device. (158) |
+| `/contact` | Contact AidForWork — Questions, Feedback & Support (50) | Contact AidForWork with questions, corrections or suggestions about our free AI tools. Email hello@aidforwork.com or use the contact form on this page. (151) |
+| `/privacy-policy` | Privacy Policy: Your Data Stays on Your Device \| AidForWork (59) | AidForWork privacy policy: our tools run entirely in your browser, we do not collect what you type, and we never sell personal information. Read it here. (153) |
+| `/terms` | AidForWork Terms of Use: Free Tools Provided As-Is (50) | AidForWork terms of use: free tools provided as-is, outputs are starting drafts to review, and example prices must be confirmed with the vendor first. (150) |
+
+(The 404 page is not listed — it is not in the sitemap and is not indexed. `index.html` title/meta/OG/Twitter + WebSite JSON-LD description updated to match the new homepage title/description.)
+
+## Polish-pass verification (2026-11-09, all done)
+- `npm run build`: **succeeds, zero errors** (dist: 3.04 kB HTML, 11.16 kB CSS, 262.19 kB JS gzipped ~79.6 kB).
+- `vite preview` curl: **18/18 × 200** — `/`, all 4 tool routes, `/guides` + 3 guides, `/about`, `/contact`, `/privacy-policy`, `/terms`, `sitemap.xml`, `robots.txt`, `llms.txt`, `logo.webp`, `favicon.webp`.
+- Headless Chromium (Playwright, 1400px + 360px viewports): **all 13 routes** render their exact new title (50–60 chars), exactly **one `<h1>`** each, header spans the full viewport width (1400px at 1400px viewport), **0px horizontal overflow at 1400px and at 360px**, **zero console/page errors**. Homepage hero computed background confirmed as the indigo gradient `linear-gradient(135deg, rgb(79,70,229), rgb(67,56,202) 55%, rgb(30,27,75))`.
+- Tool smoke tests in-browser: CRM computes $80/mo + $960/yr for the 5-user × $20 annual example; lesson plan generates for "Photosynthesis"; quiz generates with topic (Q1, MCQ options, answer key present); listing form renders all inputs. Empty-topic quiz submit correctly shows the validation error ("Please enter a quiz topic.").
+- `grep src` for `max-width: 1120px / 1140px / 1200px / 780px / 760px` container rules: **zero** (remaining `max-width` rules are only `img 100%`, hero/tool-hero lead 680px, and the ~75ch prose caps). `grep dist` for lorem/TODO/coming soon: **zero**. `grep src + index.html` for `.png/.jpg/.jpeg` references: **zero** (WebP only).
+- Not verified: no check on a real physical phone (only 360px headless viewport); no PageSpeed/Lighthouse run yet — run after deploy. NOT pushed to GitHub, NOT deployed (per brief — parent pushes and verifies).
+
 ## WebP update (2026-11-09, after v1 verification)
 - All images converted to WebP per user request: public/logo.webp (36KB, was 284KB PNG), public/favicon.webp (8KB 512x512, was 204KB PNG). No .png/.jpg references remain in src/ or index.html. favicon.ico kept as a silent fallback file only (not referenced as an image on pages). Rebuilt + re-verified: npm run build passes, vite preview curl 200 for /, tool/guide routes, sitemap, robots, llms.txt, logo.webp, favicon.webp.
 - Target repo: Zubi71/Ai-For-Work (created by user).
