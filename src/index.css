@@ -230,3 +230,133 @@ table.data-table th { background: var(--bg-soft); color: var(--navy); }
   body { color: #000; }
   .tool-output, .output-body { border: none; background: #fff; }
 }
+
+/* ---- Homepage v2 (ported from the uploaded AidForWork.html design) ----
+   Scoped to .home-v2 so tool/guide pages keep the site's own styles.
+   Header and footer are NOT part of this scope. */
+.home-v2 {
+  --bg: #ffffff; --bg-soft: #f3f6f4; --surface: #ffffff; --surface-2: #eef3f0;
+  --ink: #15211c; --ink-2: #43554d; --ink-3: #6b7d74;
+  --line: #dde6e1; --line-strong: #c8d5cd;
+  --accent: #0b6b4f; --accent-dark: #084f3a; --accent-soft: #e3f2ec;
+  --amber: #b45309; --amber-soft: #fdf1e0;
+  --radius: 14px; --radius-s: 9px;
+  --shadow: 0 1px 2px rgba(16,32,25,.05), 0 10px 30px -14px rgba(16,32,25,.22);
+  font-family: "Libre Franklin", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 17px; line-height: 1.6; color: var(--ink); background: var(--bg);
+}
+.home-v2 h1, .home-v2 h2, .home-v2 h3 { line-height: 1.15; margin: 0; letter-spacing: -.01em; }
+.home-v2 h2 { font-size: clamp(28px, 4vw, 40px); font-weight: 800; }
+.home-v2 h3 { font-size: 20px; font-weight: 700; }
+.home-v2 p { margin: 0; }
+.home-v2 a { color: var(--accent); text-decoration: none; }
+.home-v2 a:hover { text-decoration: underline; }
+.home-v2 section { padding: 72px 0; }
+.home-v2 .soft { background: var(--bg-soft); }
+.home-v2 .lede { color: var(--ink-2); font-size: clamp(17px, 2vw, 19px); max-width: 640px; }
+.home-v2 .sec-head { max-width: 720px; margin-bottom: 36px; }
+.home-v2 .sec-head h2 { margin-bottom: 12px; }
+.home-v2 .sec-head .lede { margin-top: 0; }
+.home-v2 .tag { display: inline-block; font-size: 12.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 5px 12px; margin-bottom: 16px; }
+.home-v2 .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: #fff; font-weight: 700; font-size: 16px; padding: 13px 24px; border-radius: 10px; border: 1px solid var(--accent); cursor: pointer; font-family: inherit; }
+.home-v2 .btn:hover { background: var(--accent-dark); border-color: var(--accent-dark); text-decoration: none; }
+.home-v2 .btn.ghost { background: transparent; color: var(--accent); }
+.home-v2 .btn.ghost:hover { background: var(--accent-soft); }
+.home-v2 .go { font-weight: 700; font-size: 15px; }
+
+/* Hero */
+.home-v2 .hero { padding: 64px 0 76px; background: none; }
+.home-v2 .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 52px; align-items: center; }
+.home-v2 .hero h1 { font-size: clamp(36px, 5.2vw, 58px); font-weight: 800; letter-spacing: -.025em; margin-bottom: 20px; color: var(--ink); }
+.home-v2 .hero h1 em { font-style: normal; color: var(--accent); }
+.home-v2 .hero .lede { margin-bottom: 30px; }
+.home-v2 .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 28px; }
+.home-v2 .hero-points { display: flex; gap: 20px; flex-wrap: wrap; color: var(--ink-2); font-size: 14.5px; font-weight: 600; }
+.home-v2 .hero-points span { display: inline-flex; align-items: center; gap: 7px; }
+.home-v2 .hero-points .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); flex: none; }
+.home-v2 .hero-img { border-radius: 18px; overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--line); }
+.home-v2 .hero-img img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/3.1; }
+.home-v2 .hero-card { margin-top: 16px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 20px; display: flex; gap: 18px; align-items: center; box-shadow: var(--shadow); }
+.home-v2 .hero-card .num { font-family: "IBM Plex Mono", monospace; font-size: 26px; font-weight: 600; color: var(--accent); white-space: nowrap; }
+.home-v2 .hero-card p { font-size: 14.5px; color: var(--ink-2); line-height: 1.45; }
+
+/* Quick answer (AEO) */
+.home-v2 .answer { border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: var(--radius); background: var(--surface); padding: 26px 30px; box-shadow: var(--shadow); }
+.home-v2 .answer h2 { font-size: 22px; margin-bottom: 10px; }
+.home-v2 .answer p { color: var(--ink-2); }
+.home-v2 .answer strong { color: var(--ink); }
+
+/* Professions */
+.home-v2 .prof-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.home-v2 .prof { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow); }
+.home-v2 .prof img { width: 100%; height: 210px; object-fit: cover; }
+.home-v2 .prof-body { padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+.home-v2 .prof-body p { color: var(--ink-2); font-size: 15.5px; }
+.home-v2 .prof ul { margin: 2px 0 6px; padding: 0; list-style: none; display: grid; gap: 8px; }
+.home-v2 .prof li { font-size: 15px; font-weight: 600; display: flex; gap: 9px; align-items: baseline; }
+.home-v2 .prof li::before { content: ""; width: 7px; height: 7px; border-radius: 2px; background: var(--amber); flex: none; transform: translateY(-1px); }
+.home-v2 .prof .go { margin-top: auto; }
+
+/* Tools (tabs + cards linking to the real tool pages) */
+.home-v2 .tabs { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px; }
+.home-v2 .tab { padding: 11px 20px; border-radius: 999px; border: 1px solid var(--line-strong); background: var(--surface); font: inherit; font-weight: 700; font-size: 15px; color: var(--ink-2); cursor: pointer; }
+.home-v2 .tab:hover { border-color: var(--accent); color: var(--ink); }
+.home-v2 .tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.home-v2 .tool-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+.home-v2 .tool { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; box-shadow: var(--shadow); }
+.home-v2 .tool h3 { margin-bottom: 6px; }
+.home-v2 .tool h3 a { color: var(--ink); }
+.home-v2 .tool h3 a:hover { color: var(--accent); text-decoration: none; }
+.home-v2 .tool .sub { color: var(--ink-2); font-size: 15px; margin-bottom: 20px; }
+
+/* Guides */
+.home-v2 .guide-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: start; }
+.home-v2 .guide { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; box-shadow: var(--shadow); }
+.home-v2 .guide .meta { display: flex; gap: 10px; align-items: center; margin-bottom: 14px; font-size: 13px; color: var(--ink-3); font-weight: 600; }
+.home-v2 .guide .who { color: var(--amber); background: var(--amber-soft); padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+.home-v2 .guide h3 { margin-bottom: 10px; font-size: 19px; }
+.home-v2 .guide h3 a { color: var(--ink); }
+.home-v2 .guide h3 a:hover { color: var(--accent); text-decoration: none; }
+.home-v2 .guide p { color: var(--ink-2); font-size: 15.5px; margin-bottom: 12px; }
+
+/* Steps */
+.home-v2 .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 0; }
+.home-v2 .step { border: none; border-top: 3px solid var(--accent); border-radius: 0; background: none; padding: 18px 0 0; }
+.home-v2 .step .n { font-family: "IBM Plex Mono", monospace; color: var(--accent); font-weight: 600; font-size: 14px; }
+.home-v2 .step h3 { margin: 8px 0 8px; }
+.home-v2 .step p { color: var(--ink-2); font-size: 15.5px; }
+
+/* FAQ */
+.home-v2 .faq { max-width: 820px; }
+.home-v2 .faq-item { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); margin-bottom: 12px; overflow: hidden; padding: 0; }
+.home-v2 .faq-q { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; text-align: left; background: none; border: none; padding: 19px 22px; font: inherit; font-weight: 700; font-size: 16.5px; color: var(--ink); cursor: pointer; }
+.home-v2 .faq-q .chev { color: var(--accent); font-size: 20px; flex: none; transition: transform .2s; }
+.home-v2 .faq-item.open .chev { transform: rotate(45deg); }
+.home-v2 .faq-a { padding: 0 22px 20px; color: var(--ink-2); font-size: 15.5px; }
+
+/* CTA band */
+.home-v2 .cta-band { background: var(--accent-dark); border-radius: 18px; padding: 44px 40px; color: #eafaf2; display: grid; grid-template-columns: 1.2fr .8fr; gap: 30px; align-items: center; }
+.home-v2 .cta-band h2 { color: #fff; font-size: clamp(24px, 3.4vw, 34px); margin-bottom: 10px; }
+.home-v2 .cta-band p { color: #cdeee0; }
+.home-v2 .cta-band form { display: flex; gap: 10px; flex-wrap: wrap; }
+.home-v2 .cta-band input { flex: 1; min-width: 210px; padding: 13px 16px; border-radius: 10px; border: 1px solid rgba(255,255,255,.35); background: rgba(255,255,255,.1); color: #fff; font: inherit; font-size: 16px; }
+.home-v2 .cta-band input::placeholder { color: #a9d8c2; }
+.home-v2 .cta-band .btn { background: #fff; color: var(--accent-dark); border-color: #fff; }
+.home-v2 .cta-band .btn:hover { background: var(--accent-soft); }
+
+@media (max-width: 960px) {
+  .home-v2 .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+  .home-v2 .prof-grid, .home-v2 .guide-grid, .home-v2 .steps { grid-template-columns: 1fr; }
+  .home-v2 .tool-grid { grid-template-columns: 1fr; }
+  .home-v2 .cta-band { grid-template-columns: 1fr; }
+  .home-v2 section { padding: 54px 0; }
+}
+@media (max-width: 560px) {
+  .home-v2 .hero-card { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .home-v2 .answer { padding: 22px; }
+  .home-v2 .tool { padding: 21px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-v2 { scroll-behavior: auto; }
+  .home-v2 * { transition: none !important; }
+}
