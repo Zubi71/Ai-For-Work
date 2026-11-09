@@ -25,6 +25,10 @@ export default function Header() {
           <NavLink to="/tools/ai-grading-quiz-generator" onClick={close}>Quizzes</NavLink>
           <NavLink to="/tools/listing-description-generator" onClick={close}>Listings</NavLink>
           <NavLink to="/tools/crm-cost-calculator" onClick={close}>CRM Costs</NavLink>
+          <NavLink to="/grade-calculator" onClick={close}>Grade</NavLink>
+          <NavLink to="/invoice-calculator" onClick={close}>Invoice</NavLink>
+          <NavLink to="/hourly-rate-calculator" onClick={close}>Hourly Rate</NavLink>
+          <NavLink to="/commission-calculator" onClick={close}>Commission</NavLink>
           <NavLink to="/guides" onClick={close}>Guides</NavLink>
           <NavLink to="/about" onClick={close}>About</NavLink>
           <NavLink to="/contact" onClick={close}>Contact</NavLink>

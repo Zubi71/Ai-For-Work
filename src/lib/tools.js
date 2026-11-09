@@ -261,3 +261,79 @@ export function calculateCrm({ users, pricePerUser, billing, setupFee }) {
   })
   return { users: u, pricePerUser: price, billing: annual ? 'annual' : 'monthly', setupFee: setup, effectivePricePerUser: effectivePrice, monthly, annual: yearly, firstYear, perUserPerMonth: round2(monthly / u), comparison }
 }
+
+// ---------------------------------------------------------------------------
+// Grade calculator
+// ---------------------------------------------------------------------------
+//   Percentage = score / total marks x 100 (1 decimal place)
+//   Letter grade (standard US scale): A >= 90%, B >= 80%, C >= 70%,
+//   D >= 60%, F below 60%.
+// Example check: 42 / 50 -> 84.0%, grade B.
+export function calculateGrade({ score, total }) {
+  const round1 = (n) => Math.round(n * 10) / 10
+  const s = Math.max(0, parseFloat(score) || 0)
+  const t = Math.max(0, parseFloat(total) || 0)
+  const percentage = t > 0 ? round1((s / t) * 100) : 0
+  const grade = percentage >= 90 ? 'A' : percentage >= 80 ? 'B' : percentage >= 70 ? 'C' : percentage >= 60 ? 'D' : 'F'
+  return { score: s, total: t, percentage, grade }
+}
+
+// ---------------------------------------------------------------------------
+// Invoice calculator
+// ---------------------------------------------------------------------------
+//   Labour   = hours x hourly rate
+//   Subtotal = labour + expenses
+//   Tax      = subtotal x tax rate / 100
+//   Total    = subtotal + tax
+// Example check: 10 hours x $50 + $100 expenses = $600 subtotal,
+//   5% tax = $30, total $630.00.
+export function calculateInvoice({ hours, rate, expenses, taxRate }) {
+  const round2 = (n) => Math.round(n * 100) / 100
+  const h = Math.max(0, parseFloat(hours) || 0)
+  const r = Math.max(0, parseFloat(rate) || 0)
+  const exp = Math.max(0, parseFloat(expenses) || 0)
+  const tax = Math.max(0, parseFloat(taxRate) || 0)
+  const labour = round2(h * r)
+  const subtotal = round2(labour + exp)
+  const taxAmount = round2((subtotal * tax) / 100)
+  const total = round2(subtotal + taxAmount)
+  return { hours: h, rate: r, expenses: exp, taxRate: tax, labour, subtotal, taxAmount, total }
+}
+
+// ---------------------------------------------------------------------------
+// Freelance hourly rate calculator
+// ---------------------------------------------------------------------------
+//   Annual total to cover = salary x (1 + overhead / 100)
+//   Hourly rate = annual total / billable hours per year
+//   Monthly at this rate = annual total / 12
+// Example check: $92,000 salary + 35% overhead = $124,200,
+//   / 1,960 billable hours (40 hours x 49 weeks) = $63.37 per hour.
+export function calculateHourlyRate({ salary, overheadPct, billableHours }) {
+  const round2 = (n) => Math.round(n * 100) / 100
+  const s = Math.max(0, parseFloat(salary) || 0)
+  const o = Math.max(0, parseFloat(overheadPct) || 0)
+  const h = Math.max(1, parseFloat(billableHours) || 1)
+  const annualTotal = round2(s * (1 + o / 100))
+  const hourly = round2(annualTotal / h)
+  const monthly = round2(annualTotal / 12)
+  return { salary: s, overheadPct: o, billableHours: h, annualTotal, hourly, monthly }
+}
+
+// ---------------------------------------------------------------------------
+// Commission calculator
+// ---------------------------------------------------------------------------
+//   Total commission = sale price x commission rate / 100
+//   Agent share      = total commission x agent split / 100
+//   Brokerage share  = total commission - agent share
+// Example check: $250,000 sale x 6% = $15,000 total commission,
+//   70% agent split -> agent $10,500, brokerage $4,500.
+export function calculateCommission({ salePrice, commissionPct, agentSplitPct }) {
+  const round2 = (n) => Math.round(n * 100) / 100
+  const price = Math.max(0, parseFloat(salePrice) || 0)
+  const pct = Math.max(0, parseFloat(commissionPct) || 0)
+  const split = Math.max(0, Math.min(100, parseFloat(agentSplitPct) || 0))
+  const totalCommission = round2((price * pct) / 100)
+  const agentShare = round2((totalCommission * split) / 100)
+  const brokerageShare = round2(totalCommission - agentShare)
+  return { salePrice: price, commissionPct: pct, agentSplitPct: split, totalCommission, agentShare, brokerageShare }
+}

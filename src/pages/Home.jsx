@@ -61,6 +61,30 @@ export default function Home() {
               <p>See what a CRM really costs your team per month and per year, and compare three popular options.</p>
               <Link className="card-link" to="/tools/crm-cost-calculator">Calculate CRM costs →</Link>
             </article>
+            <article className="card">
+              <span className="tag">For teachers</span>
+              <h3><Link to="/grade-calculator">Grade Calculator</Link></h3>
+              <p>Turn any score into a percentage and a letter grade, with the full grade scale shown.</p>
+              <Link className="card-link" to="/grade-calculator">Calculate a grade →</Link>
+            </article>
+            <article className="card">
+              <span className="tag">For freelancers</span>
+              <h3><Link to="/invoice-calculator">Invoice Calculator</Link></h3>
+              <p>Work out an invoice total — hours at your rate, plus expenses and tax, line by line.</p>
+              <Link className="card-link" to="/invoice-calculator">Calculate an invoice →</Link>
+            </article>
+            <article className="card">
+              <span className="tag">For freelancers</span>
+              <h3><Link to="/hourly-rate-calculator">Freelance Hourly Rate Calculator</Link></h3>
+              <p>Find the hourly rate that covers your target salary and overhead, on your real billable hours.</p>
+              <Link className="card-link" to="/hourly-rate-calculator">Find your rate →</Link>
+            </article>
+            <article className="card">
+              <span className="tag">For real estate agents</span>
+              <h3><Link to="/commission-calculator">Commission Calculator</Link></h3>
+              <p>Split the commission on a sale between agent and brokerage, with every figure shown.</p>
+              <Link className="card-link" to="/commission-calculator">Calculate commission →</Link>
+            </article>
           </div>
         </div>
       </section>

@@ -16,6 +16,10 @@ export default function Footer() {
             <li><Link to="/tools/ai-grading-quiz-generator">AI Grading &amp; Quiz Generator</Link></li>
             <li><Link to="/tools/listing-description-generator">Listing Description Generator</Link></li>
             <li><Link to="/tools/crm-cost-calculator">CRM Cost Calculator</Link></li>
+            <li><Link to="/grade-calculator">Grade Calculator</Link></li>
+            <li><Link to="/invoice-calculator">Invoice Calculator</Link></li>
+            <li><Link to="/hourly-rate-calculator">Freelance Hourly Rate Calculator</Link></li>
+            <li><Link to="/commission-calculator">Commission Calculator</Link></li>
           </ul>
         </nav>
         <nav aria-label="Guides and company">

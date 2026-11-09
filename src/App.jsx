@@ -5,6 +5,10 @@ import LessonPlan from './pages/tools/LessonPlan'
 import QuizGenerator from './pages/tools/QuizGenerator'
 import ListingGenerator from './pages/tools/ListingGenerator'
 import CrmCalculator from './pages/tools/CrmCalculator'
+import GradeCalculator from './pages/tools/GradeCalculator'
+import InvoiceCalculator from './pages/tools/InvoiceCalculator'
+import HourlyRateCalculator from './pages/tools/HourlyRateCalculator'
+import CommissionCalculator from './pages/tools/CommissionCalculator'
 import Guides from './pages/Guides'
 import GuideTeachers from './pages/GuideTeachers'
 import GuideAccountants from './pages/GuideAccountants'
@@ -24,6 +28,10 @@ export default function App() {
         <Route path="tools/ai-grading-quiz-generator" element={<QuizGenerator />} />
         <Route path="tools/listing-description-generator" element={<ListingGenerator />} />
         <Route path="tools/crm-cost-calculator" element={<CrmCalculator />} />
+        <Route path="grade-calculator" element={<GradeCalculator />} />
+        <Route path="invoice-calculator" element={<InvoiceCalculator />} />
+        <Route path="hourly-rate-calculator" element={<HourlyRateCalculator />} />
+        <Route path="commission-calculator" element={<CommissionCalculator />} />
         <Route path="guides" element={<Guides />} />
         <Route path="guides/ai-tools-for-teachers" element={<GuideTeachers />} />
         <Route path="guides/ai-tools-for-accountants" element={<GuideAccountants />} />
