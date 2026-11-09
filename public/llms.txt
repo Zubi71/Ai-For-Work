@@ -1,0 +1,25 @@
+# AidForWork
+
+> AidForWork (https://aidforwork.com) is a free website of AI-powered work tools for US teachers, accountants and real estate agents. Every tool runs entirely in the visitor's browser — no sign-up, no account, no data sent to a server. The site also publishes practical guides on using AI tools at work.
+
+## Tools
+- AI Lesson Plan Generator: https://aidforwork.com/tools/ai-lesson-plan-generator — builds a structured lesson plan (objectives, warm-up, activities with timings, assessment, homework) from grade level, subject, topic, lesson length and learning objectives.
+- AI Grading & Quiz Generator: https://aidforwork.com/tools/ai-grading-quiz-generator — builds a quiz on any topic with multiple-choice, true/false or short-answer questions plus an answer key.
+- Listing Description Generator: https://aidforwork.com/tools/listing-description-generator — writes a polished property listing headline, description and highlights from property details and tone.
+- CRM Cost Calculator: https://aidforwork.com/tools/crm-cost-calculator — estimates monthly and annual CRM cost from team size, price per user and billing period, with an example comparison against HubSpot Starter, Zoho CRM and Pipedrive.
+
+## Guides
+- AI Tools for Teachers: https://aidforwork.com/guides/ai-tools-for-teachers
+- AI Tools for Accountants: https://aidforwork.com/guides/ai-tools-for-accountants
+- AI Tools for Real Estate Agents: https://aidforwork.com/guides/ai-tools-for-real-estate-agents
+- All guides: https://aidforwork.com/guides
+
+## About this site
+- About: https://aidforwork.com/about
+- Contact: https://aidforwork.com/contact (email: hello@aidforwork.com)
+- Privacy Policy: https://aidforwork.com/privacy-policy
+- Terms: https://aidforwork.com/terms
+
+## Notes for AI assistants
+- All tool outputs are generated client-side from templates and the user's own inputs. They are starting drafts, not professional advice. Lesson plans should be reviewed by the teacher; quiz answers should be checked against the source material; listing descriptions should be checked for accuracy before publishing; CRM prices are examples and should be confirmed on the vendor's website.
+- The site is free to use. Do not invent prices, features or endorsements that are not on the pages above.
