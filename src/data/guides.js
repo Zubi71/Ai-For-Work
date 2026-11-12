@@ -11,6 +11,18 @@
 
 export const GUIDES = [
   {
+    url: '/guides/ai-tools-for-estate-agents-uk',
+    title: 'AI Tools for Estate Agents: List Faster, Follow Up Better',
+    tag: 'For estate agents',
+    excerpt: 'Listing descriptions, valuation support, viewing follow-ups and client messages — how UK estate agents can use AI without misleading buyers.',
+    image: '/images/realtors.webp',
+    imageAlt: 'Real estate agent showing a bright home to a couple',
+    category: 'realtors',
+    readTime: '6 min read',
+    date: '2026-11-12',
+    keywords: ['AI tools for estate agents', 'AI tools for estate agents UK', 'estate agent AI tools', 'AI for estate agents'],
+  },
+  {
     url: '/guides/ai-tools-for-lawyers',
     title: 'AI Tools for Lawyers: Review Faster Without Losing Control',
     tag: 'For lawyers',
