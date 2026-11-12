@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Seo from '../../components/Seo'
+import AdSlot from '../../components/AdSlot'
 import { calculateCommission, formatUSD } from '../../lib/tools'
 
 const FAQ = [
@@ -44,6 +45,8 @@ export default function CommissionCalculator() {
         </div>
       </section>
 
+      <div className="container"><AdSlot position="below_heading" /></div>
+
       <div className="container tool-layout">
         <form className="tool-form" onSubmit={onSubmit} aria-label="Commission calculator form">
           <div className="field">
@@ -69,6 +72,7 @@ export default function CommissionCalculator() {
         </form>
 
         <div className="tool-output" aria-live="polite">
+        <AdSlot position="before_result" />
           {result ? (
             <>
               <h2>Your commission breakdown</h2>
@@ -87,6 +91,7 @@ export default function CommissionCalculator() {
               <p>Fill in the form and click “Calculate commission”. Try it with a $250,000 sale at 6% and a 70% agent split.</p>
             </>
           )}
+        <AdSlot position="below_result" />
         </div>
       </div>
 

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Seo from '../../components/Seo'
+import AdSlot from '../../components/AdSlot'
 import { calculateHourlyRate, formatUSD } from '../../lib/tools'
 
 const FAQ = [
@@ -44,6 +45,8 @@ export default function HourlyRateCalculator() {
         </div>
       </section>
 
+      <div className="container"><AdSlot position="below_heading" /></div>
+
       <div className="container tool-layout">
         <form className="tool-form" onSubmit={onSubmit} aria-label="Hourly rate calculator form">
           <div className="field">
@@ -70,6 +73,7 @@ export default function HourlyRateCalculator() {
         </form>
 
         <div className="tool-output" aria-live="polite">
+        <AdSlot position="before_result" />
           {result ? (
             <>
               <h2>Your hourly rate</h2>
@@ -88,6 +92,7 @@ export default function HourlyRateCalculator() {
               <p>Fill in the form and click “Calculate my rate”. Try it with a $92,000 salary, 35% overhead and 1,960 billable hours.</p>
             </>
           )}
+        <AdSlot position="below_result" />
         </div>
       </div>
 

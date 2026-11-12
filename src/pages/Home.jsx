@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Seo from '../components/Seo'
+import AdSlot from '../components/AdSlot'
 
 /* FAQ copied from the uploaded AidForWork homepage file (8 questions). */
 const HOME_FAQ = [
@@ -258,6 +259,8 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="container"><AdSlot position="after_tools" /></div>
+
       <section className="soft" id="guides">
         <div className="container">
           <div className="sec-head">
@@ -341,6 +344,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div className="container"><AdSlot position="above_cta" /></div>
 
       <section id="contact">
         <div className="container">

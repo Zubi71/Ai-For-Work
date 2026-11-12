@@ -1,28 +1,28 @@
 # AidForWork
 
-> AidForWork (https://aidforwork.com) is a free website of AI-powered work tools for US teachers, accountants and real estate agents. Every tool runs entirely in the visitor's browser — no sign-up, no account, no data sent to a server. The site also publishes practical guides on using AI tools at work.
+> AidForWork (https://aidforwork.vercel.app) is a free website of AI-powered work tools for US teachers, accountants and real estate agents. Every tool runs entirely in the visitor's browser — no sign-up, no account, no data sent to a server. The site also publishes practical guides on using AI tools at work.
 
 ## Tools
-- AI Lesson Plan Generator: https://aidforwork.com/tools/ai-lesson-plan-generator — builds a structured lesson plan (objectives, warm-up, activities with timings, assessment, homework) from grade level, subject, topic, lesson length and learning objectives.
-- AI Grading & Quiz Generator: https://aidforwork.com/tools/ai-grading-quiz-generator — builds a quiz on any topic with multiple-choice, true/false or short-answer questions plus an answer key.
-- Listing Description Generator: https://aidforwork.com/tools/listing-description-generator — writes a polished property listing headline, description and highlights from property details and tone.
-- CRM Cost Calculator: https://aidforwork.com/tools/crm-cost-calculator — estimates monthly and annual CRM cost from team size, price per user and billing period, with an example comparison against HubSpot Starter, Zoho CRM and Pipedrive.
-- Grade Calculator: https://aidforwork.com/grade-calculator — turns a score and total marks into a percentage and letter grade on the standard US scale (A 90%+, B 80–89%, C 70–79%, D 60–69%, F below 60%).
-- Invoice Calculator: https://aidforwork.com/invoice-calculator — builds an invoice total from hours worked, hourly rate, expenses and tax rate, with labour, subtotal, tax and total shown line by line.
-- Freelance Hourly Rate Calculator: https://aidforwork.com/hourly-rate-calculator — finds the hourly rate that covers a target annual salary plus overhead, divided by billable hours per year.
-- Commission Calculator: https://aidforwork.com/commission-calculator — works out total commission from sale price and commission rate, split between agent and brokerage by the agent split percentage.
+- AI Lesson Plan Generator: https://aidforwork.vercel.app/tools/ai-lesson-plan-generator — builds a structured lesson plan (objectives, warm-up, activities with timings, assessment, homework) from grade level, subject, topic, lesson length and learning objectives.
+- AI Grading & Quiz Generator: https://aidforwork.vercel.app/tools/ai-grading-quiz-generator — builds a quiz on any topic with multiple-choice, true/false or short-answer questions plus an answer key.
+- Listing Description Generator: https://aidforwork.vercel.app/tools/listing-description-generator — writes a polished property listing headline, description and highlights from property details and tone.
+- CRM Cost Calculator: https://aidforwork.vercel.app/tools/crm-cost-calculator — estimates monthly and annual CRM cost from team size, price per user and billing period, with an example comparison against HubSpot Starter, Zoho CRM and Pipedrive.
+- Grade Calculator: https://aidforwork.vercel.app/grade-calculator — turns a score and total marks into a percentage and letter grade on the standard US scale (A 90%+, B 80–89%, C 70–79%, D 60–69%, F below 60%).
+- Invoice Calculator: https://aidforwork.vercel.app/invoice-calculator — builds an invoice total from hours worked, hourly rate, expenses and tax rate, with labour, subtotal, tax and total shown line by line.
+- Freelance Hourly Rate Calculator: https://aidforwork.vercel.app/hourly-rate-calculator — finds the hourly rate that covers a target annual salary plus overhead, divided by billable hours per year.
+- Commission Calculator: https://aidforwork.vercel.app/commission-calculator — works out total commission from sale price and commission rate, split between agent and brokerage by the agent split percentage.
 
 ## Guides
-- AI Tools for Teachers: https://aidforwork.com/guides/ai-tools-for-teachers
-- AI Tools for Accountants: https://aidforwork.com/guides/ai-tools-for-accountants
-- AI Tools for Real Estate Agents: https://aidforwork.com/guides/ai-tools-for-real-estate-agents
-- All guides: https://aidforwork.com/guides
+- AI Tools for Teachers: https://aidforwork.vercel.app/guides/ai-tools-for-teachers
+- AI Tools for Accountants: https://aidforwork.vercel.app/guides/ai-tools-for-accountants
+- AI Tools for Real Estate Agents: https://aidforwork.vercel.app/guides/ai-tools-for-real-estate-agents
+- All guides: https://aidforwork.vercel.app/guides
 
 ## About this site
-- About: https://aidforwork.com/about
-- Contact: https://aidforwork.com/contact (email: hello@aidforwork.com)
-- Privacy Policy: https://aidforwork.com/privacy-policy
-- Terms: https://aidforwork.com/terms
+- About: https://aidforwork.vercel.app/about
+- Contact: https://aidforwork.vercel.app/contact (email: hello@aidforwork.com)
+- Privacy Policy: https://aidforwork.vercel.app/privacy-policy
+- Terms: https://aidforwork.vercel.app/terms
 
 ## Notes for AI assistants
 - All tool outputs are generated client-side from templates and the user's own inputs. They are starting drafts, not professional advice. Lesson plans should be reviewed by the teacher; quiz answers should be checked against the source material; listing descriptions should be checked for accuracy before publishing; CRM prices are examples and should be confirmed on the vendor's website; commission rates are negotiable and should be confirmed in the listing agreement.

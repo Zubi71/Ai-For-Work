@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Seo from '../components/Seo'
+import AdSlot from '../components/AdSlot'
 
 const FAQ = [
   { q: 'What AI tools do accountants actually use?', a: 'The most useful ones handle document extraction, bank reconciliation, draft emails and client messages, and software cost comparisons. General chatbots help with drafting; specialist tools handle the numbers.' },
@@ -24,6 +25,8 @@ export default function GuideAccountants() {
         <h1>AI Tools for Accountants: What Actually Helps a Small Firm</h1>
         <p className="article-meta">AidForWork Guides · For accountants · About 6 minutes to read</p>
         <p className="lede">AI tools can genuinely help a small accounting firm — with data entry, reconciliation, drafting and software costs. But client data is sensitive, and a wrong number is not a typo, it is a liability. This guide covers what works, what to avoid, and how to choose tools without overspending.</p>
+
+        <AdSlot position="below_heading" />
 
         <h2>Where AI helps most in accounting</h2>
         <p>The strongest use is document handling. AI tools can read invoices and receipts, pull out the date, vendor, amount and tax, and suggest a category. For a firm processing hundreds of documents a month, that is real time saved — as long as someone reviews the results.</p>
@@ -56,6 +59,7 @@ export default function GuideAccountants() {
             <div className="faq-item" key={f.q}><h3>{f.q}</h3><p>{f.a}</p></div>
           ))}
         </div>
+        <AdSlot position="below_result" />
       </article>
     </>
   )

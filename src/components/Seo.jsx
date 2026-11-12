@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-const SITE = 'https://aidforwork.com'
+const SITE = 'https://aidforwork.vercel.app'
 
 function setMeta(attr, key, content) {
   const selector = attr === 'property' ? `meta[property="${key}"]` : `meta[name="${key}"]`

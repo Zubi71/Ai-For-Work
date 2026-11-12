@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Seo from '../components/Seo'
+import AdSlot from '../components/AdSlot'
 
 const FAQ = [
   { q: 'What is the best AI tool for real estate agents?', a: 'For most agents, a listing description generator saves the most time, followed by follow-up email drafts and pricing research helpers. The best tool is the one that fits how you already work — not the one with the longest feature list.' },
@@ -24,6 +25,8 @@ export default function GuideAgents() {
         <h1>AI Tools for Real Estate Agents: Listings, Follow-Up and Pricing</h1>
         <p className="article-meta">AidForWork Guides · For real estate agents · About 6 minutes to read</p>
         <p className="lede">AI tools can save real estate agents hours on listing copy, follow-up messages and market research. But a listing is a legal document as well as an advert — a wrong detail can mislead buyers. This guide explains where AI helps, where it misleads, and how to keep your listings honest.</p>
+
+        <AdSlot position="below_heading" />
 
         <h2>Listing copy: the biggest time saving</h2>
         <p>Every listing needs a headline, a description and highlights, and every one takes time to write well. An AI listing generator can produce a solid first draft in seconds from the facts you already have: property type, bedrooms, bathrooms, size, location and features. Try the <Link to="/tools/listing-description-generator">Listing Description Generator</Link> — it is free, and you can choose a professional, friendly or luxury tone.</p>
@@ -56,6 +59,7 @@ export default function GuideAgents() {
             <div className="faq-item" key={f.q}><h3>{f.q}</h3><p>{f.a}</p></div>
           ))}
         </div>
+        <AdSlot position="below_result" />
       </article>
     </>
   )

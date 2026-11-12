@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Seo from '../components/Seo'
+import AdSlot from '../components/AdSlot'
 
 const FAQ = [
   { q: 'What is the best AI tool for teachers?', a: 'There is no single best tool. Lesson planning tools save the most time for most teachers, followed by quiz generators and grading helpers. The right choice depends on your subject, grade level and what you spend the most time on.' },
@@ -24,6 +25,8 @@ export default function GuideTeachers() {
         <h1>AI Tools for Teachers: Save Hours on Planning and Grading</h1>
         <p className="article-meta">AidForWork Guides · For teachers · About 6 minutes to read</p>
         <p className="lede">AI tools can save teachers hours every week on planning, quizzes and grading — but only if you use them for the right jobs and check everything they produce. This guide explains what works, what does not, and how to start safely.</p>
+
+        <AdSlot position="below_heading" />
 
         <h2>Where AI actually saves teachers time</h2>
         <p>Teaching is full of work that is important but repetitive. Writing a lesson plan from a blank page, making a ten-question quiz, drafting feedback on thirty similar answers — these jobs take hours, and they follow patterns. That is exactly where AI tools help most.</p>
@@ -61,6 +64,7 @@ export default function GuideTeachers() {
             <div className="faq-item" key={f.q}><h3>{f.q}</h3><p>{f.a}</p></div>
           ))}
         </div>
+        <AdSlot position="below_result" />
       </article>
     </>
   )

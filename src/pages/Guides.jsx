@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Seo from '../components/Seo'
+import AdSlot from '../components/AdSlot'
 
 const FAQ = [
   { q: 'Are the AidForWork guides free to read?', a: 'Yes. Every guide on AidForWork is free to read, with no sign-up and no account.' },
@@ -21,6 +22,7 @@ export default function Guides() {
         <nav className="breadcrumbs" aria-label="Breadcrumb"><Link to="/">Home</Link> / Guides</nav>
         <h1>Guides: using AI tools at work</h1>
         <p>Short, practical guides for working professionals. No hype, no sales talk — just what a tool can genuinely do, how to check its output, and where your judgement still matters most.</p>
+        <AdSlot position="below_heading" />
         <div className="card-grid">
           <article className="card">
             <span className="tag">For teachers</span>
@@ -47,6 +49,7 @@ export default function Guides() {
             <div className="faq-item" key={f.q}><h3>{f.q}</h3><p>{f.a}</p></div>
           ))}
         </div>
+        <AdSlot position="below_result" />
       </div>
     </>
   )
