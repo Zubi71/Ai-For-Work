@@ -13,6 +13,7 @@ import Guides from './pages/Guides'
 import GuideTeachers from './pages/GuideTeachers'
 import GuideAccountants from './pages/GuideAccountants'
 import GuideAgents from './pages/GuideAgents'
+import GuideLawyers from './pages/GuideLawyers'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Privacy from './pages/Privacy'
@@ -36,6 +37,7 @@ export default function App() {
         <Route path="guides/ai-tools-for-teachers" element={<GuideTeachers />} />
         <Route path="guides/ai-tools-for-accountants" element={<GuideAccountants />} />
         <Route path="guides/ai-tools-for-real-estate-agents" element={<GuideAgents />} />
+        <Route path="guides/ai-tools-for-lawyers" element={<GuideLawyers />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="privacy-policy" element={<Privacy />} />

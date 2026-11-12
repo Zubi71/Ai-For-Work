@@ -16,6 +16,7 @@
 - AI Tools for Teachers: https://aidforwork.vercel.app/guides/ai-tools-for-teachers
 - AI Tools for Accountants: https://aidforwork.vercel.app/guides/ai-tools-for-accountants
 - AI Tools for Real Estate Agents: https://aidforwork.vercel.app/guides/ai-tools-for-real-estate-agents
+- AI Tools for Lawyers: https://aidforwork.vercel.app/guides/ai-tools-for-lawyers
 - All guides: https://aidforwork.vercel.app/guides
 
 ## About this site

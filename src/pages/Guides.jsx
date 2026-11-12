@@ -4,7 +4,7 @@ import AdSlot from '../components/AdSlot'
 
 const FAQ = [
   { q: 'Are the AidForWork guides free to read?', a: 'Yes. Every guide on AidForWork is free to read, with no sign-up and no account.' },
-  { q: 'Who are the guides written for?', a: 'Working professionals — teachers, accountants and real estate agents — who want practical advice on using AI tools, not sales talk.' },
+  { q: 'Who are the guides written for?', a: 'Working professionals — teachers, accountants, real estate agents and lawyers — who want practical advice on using AI tools, not sales talk.' },
   { q: 'Do the guides recommend specific tools?', a: 'They explain what to look for and what to avoid, and link to the free tools on this site. They do not rank paid products or earn commissions from recommendations.' },
 ]
 
@@ -41,6 +41,12 @@ export default function Guides() {
             <h3><Link to="/guides/ai-tools-for-real-estate-agents">AI Tools for Real Estate Agents</Link></h3>
             <p>Listing copy, follow-up and pricing research — where AI saves time, and where it can mislead buyers.</p>
             <Link className="card-link" to="/guides/ai-tools-for-real-estate-agents">Read the guide →</Link>
+          </article>
+          <article className="card">
+            <span className="tag">For lawyers</span>
+            <h3><Link to="/guides/ai-tools-for-lawyers">AI Tools for Lawyers</Link></h3>
+            <p>Contract review, legal research, drafting, e-discovery and client intake — where AI saves time, and where it can go wrong.</p>
+            <Link className="card-link" to="/guides/ai-tools-for-lawyers">Read the guide →</Link>
           </article>
         </div>
         <h2 style={{ marginTop: 32 }}>Frequently asked questions</h2>
