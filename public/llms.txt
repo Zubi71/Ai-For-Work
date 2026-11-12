@@ -18,6 +18,7 @@
 - AI Tools for Real Estate Agents: https://aidforwork.vercel.app/guides/ai-tools-for-real-estate-agents
 - AI Tools for Lawyers: https://aidforwork.vercel.app/guides/ai-tools-for-lawyers
 - AI Tools for Estate Agents: https://aidforwork.vercel.app/guides/ai-tools-for-estate-agents-uk
+- AI Contract Review Software: https://aidforwork.vercel.app/guides/ai-contract-review-software
 - All blog articles: https://aidforwork.vercel.app/blog
 
 ## About this site

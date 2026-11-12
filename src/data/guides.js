@@ -11,6 +11,18 @@
 
 export const GUIDES = [
   {
+    url: '/guides/ai-contract-review-software',
+    title: 'AI Contract Review Software: Faster Review Without Losing Control',
+    tag: 'For lawyers',
+    excerpt: 'Redlining, clause extraction and risk flags — what AI contract review software does, which tools small US firms use, and what to check before buying.',
+    image: '/images/hero.webp',
+    imageAlt: 'Professional starting his workday at a laptop in a bright modern office',
+    category: 'lawyers',
+    readTime: '6 min read',
+    date: '2026-11-13',
+    keywords: ['AI contract review software', 'AI tools for lawyers', 'contract review AI', 'AI for law firms'],
+  },
+  {
     url: '/guides/ai-tools-for-estate-agents-uk',
     title: 'AI Tools for Estate Agents: List Faster, Follow Up Better',
     tag: 'For estate agents',
