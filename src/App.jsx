@@ -16,6 +16,7 @@ import GuideAgents from './pages/GuideAgents'
 import GuideLawyers from './pages/GuideLawyers'
 import GuideEstateAgentsUk from './pages/GuideEstateAgentsUk'
 import GuideContractReview from './pages/GuideContractReview'
+import GuideSolicitorsUk from './pages/GuideSolicitorsUk'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Privacy from './pages/Privacy'
@@ -43,6 +44,7 @@ export default function App() {
         <Route path="guides/ai-tools-for-lawyers" element={<GuideLawyers />} />
         <Route path="guides/ai-tools-for-estate-agents-uk" element={<GuideEstateAgentsUk />} />
         <Route path="guides/ai-contract-review-software" element={<GuideContractReview />} />
+        <Route path="guides/ai-tools-for-solicitors-uk" element={<GuideSolicitorsUk />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="privacy-policy" element={<Privacy />} />

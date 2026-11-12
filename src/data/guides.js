@@ -11,6 +11,18 @@
 
 export const GUIDES = [
   {
+    url: '/guides/ai-tools-for-solicitors-uk',
+    title: 'AI Tools for Solicitors: Draft Faster Without Losing Control',
+    tag: 'For solicitors',
+    excerpt: 'Drafting, client intake, legal research, time recording and case management — how UK solicitors can use AI without risking client confidentiality.',
+    image: '/images/realtors.webp',
+    imageAlt: 'Real estate agent showing a bright home to a couple',
+    category: 'lawyers',
+    readTime: '6 min read',
+    date: '2026-11-13',
+    keywords: ['AI tools for solicitors', 'AI tools for solicitors UK', 'solicitor AI tools', 'AI for law firms'],
+  },
+  {
     url: '/guides/ai-contract-review-software',
     title: 'AI Contract Review Software: Faster Review Without Losing Control',
     tag: 'For lawyers',

@@ -19,6 +19,7 @@
 - AI Tools for Lawyers: https://aidforwork.vercel.app/guides/ai-tools-for-lawyers
 - AI Tools for Estate Agents: https://aidforwork.vercel.app/guides/ai-tools-for-estate-agents-uk
 - AI Contract Review Software: https://aidforwork.vercel.app/guides/ai-contract-review-software
+- AI Tools for Solicitors: https://aidforwork.vercel.app/guides/ai-tools-for-solicitors-uk
 - All blog articles: https://aidforwork.vercel.app/blog
 
 ## About this site
