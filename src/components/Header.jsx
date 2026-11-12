@@ -77,7 +77,7 @@ export default function Header() {
               ))}
             </div>
           </div>
-          <NavLink to="/guides" onClick={close}>Guides</NavLink>
+          <NavLink to="/blog" onClick={close}>Blog</NavLink>
           <NavLink to="/about" onClick={close}>About</NavLink>
           <NavLink to="/contact" onClick={close}>Contact</NavLink>
         </nav>

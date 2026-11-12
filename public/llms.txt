@@ -1,6 +1,6 @@
 # AidForWork
 
-> AidForWork (https://aidforwork.vercel.app) is a free website of AI-powered work tools for US teachers, accountants and real estate agents. Every tool runs entirely in the visitor's browser — no sign-up, no account, no data sent to a server. The site also publishes practical guides on using AI tools at work.
+> AidForWork (https://aidforwork.vercel.app) is a free website of AI-powered work tools for US teachers, accountants and real estate agents. Every tool runs entirely in the visitor's browser — no sign-up, no account, no data sent to a server. The site also publishes a blog with practical articles on using AI tools at work.
 
 ## Tools
 - AI Lesson Plan Generator: https://aidforwork.vercel.app/tools/ai-lesson-plan-generator — builds a structured lesson plan (objectives, warm-up, activities with timings, assessment, homework) from grade level, subject, topic, lesson length and learning objectives.
@@ -12,12 +12,12 @@
 - Freelance Hourly Rate Calculator: https://aidforwork.vercel.app/hourly-rate-calculator — finds the hourly rate that covers a target annual salary plus overhead, divided by billable hours per year.
 - Commission Calculator: https://aidforwork.vercel.app/commission-calculator — works out total commission from sale price and commission rate, split between agent and brokerage by the agent split percentage.
 
-## Guides
+## Blog
 - AI Tools for Teachers: https://aidforwork.vercel.app/guides/ai-tools-for-teachers
 - AI Tools for Accountants: https://aidforwork.vercel.app/guides/ai-tools-for-accountants
 - AI Tools for Real Estate Agents: https://aidforwork.vercel.app/guides/ai-tools-for-real-estate-agents
 - AI Tools for Lawyers: https://aidforwork.vercel.app/guides/ai-tools-for-lawyers
-- All guides: https://aidforwork.vercel.app/guides
+- All blog articles: https://aidforwork.vercel.app/blog
 
 ## About this site
 - About: https://aidforwork.vercel.app/about

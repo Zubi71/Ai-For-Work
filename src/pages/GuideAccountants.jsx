@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import Seo from '../components/Seo'
-import AdSlot from '../components/AdSlot'
 
 const FAQ = [
   { q: 'What AI tools do accountants actually use?', a: 'The most useful ones handle document extraction, bank reconciliation, draft emails and client messages, and software cost comparisons. General chatbots help with drafting; specialist tools handle the numbers.' },
@@ -16,17 +15,17 @@ export default function GuideAccountants() {
       <Seo
         title="AI Tools for Accountants: Save Time, Cut Costs | AidForWork"
         description="What AI can genuinely help with in a small accounting firm — bookkeeping, reconciliation, client messages and software costs — plus data safety rules."
+        keywords={["AI tools for accountants", "AI accounting tools", "AI bookkeeping tools", "AI tools for small accounting firms"]}
         path="/guides/ai-tools-for-accountants"
         faq={FAQ}
-        breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Guides', path: '/guides' }, { name: 'AI Tools for Accountants', path: '/guides/ai-tools-for-accountants' }]}
+        breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Blog', path: '/blog' }, { name: 'AI Tools for Accountants', path: '/guides/ai-tools-for-accountants' }]}
       />
       <article className="article">
-        <nav className="breadcrumbs" aria-label="Breadcrumb"><Link to="/">Home</Link> / <Link to="/guides">Guides</Link> / AI Tools for Accountants</nav>
+        <nav className="breadcrumbs" aria-label="Breadcrumb"><Link to="/">Home</Link> / <Link to="/blog">Blog</Link> / AI Tools for Accountants</nav>
+        <div className="article-hero"><img src="/images/accountants.webp" alt="Accountant working with a calculator, charts and a laptop" /></div>
         <h1>AI Tools for Accountants: What Actually Helps a Small Firm</h1>
-        <p className="article-meta">AidForWork Guides · For accountants · About 6 minutes to read</p>
+        <p className="article-meta">AidForWork Blog · For accountants · About 6 minutes to read</p>
         <p className="lede">AI tools can genuinely help a small accounting firm — with data entry, reconciliation, drafting and software costs. But client data is sensitive, and a wrong number is not a typo, it is a liability. This guide covers what works, what to avoid, and how to choose tools without overspending.</p>
-
-        <AdSlot position="below_heading" />
 
         <h2>Where AI helps most in accounting</h2>
         <p>The strongest use is document handling. AI tools can read invoices and receipts, pull out the date, vendor, amount and tax, and suggest a category. For a firm processing hundreds of documents a month, that is real time saved — as long as someone reviews the results.</p>
@@ -59,7 +58,6 @@ export default function GuideAccountants() {
             <div className="faq-item" key={f.q}><h3>{f.q}</h3><p>{f.a}</p></div>
           ))}
         </div>
-        <AdSlot position="below_result" />
       </article>
     </>
   )

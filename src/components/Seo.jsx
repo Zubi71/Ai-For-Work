@@ -18,11 +18,17 @@ function setMeta(attr, key, content) {
  * canonical and social tags, and injects FAQPage / BreadcrumbList JSON-LD
  * that matches the visible FAQs on the page.
  */
-export default function Seo({ title, description, path = '/', faq = null, breadcrumbs = null }) {
+export default function Seo({ title, description, path = '/', faq = null, breadcrumbs = null, keywords = null }) {
   useEffect(() => {
     const url = SITE + path
     document.title = title
     setMeta('name', 'description', description)
+    if (keywords && keywords.length) {
+      setMeta('name', 'keywords', keywords.join(', '))
+    } else {
+      const stale = document.querySelector('meta[name="keywords"]')
+      if (stale) stale.remove()
+    }
     let canonical = document.querySelector('link[rel="canonical"]')
     if (!canonical) {
       canonical = document.createElement('link')
@@ -72,7 +78,7 @@ export default function Seo({ title, description, path = '/', faq = null, breadc
       const s = document.getElementById('page-jsonld')
       if (s) s.remove()
     }
-  }, [title, description, path, faq, breadcrumbs])
+  }, [title, description, path, faq, breadcrumbs, keywords])
 
   return null
 }

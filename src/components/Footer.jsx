@@ -22,9 +22,10 @@ export default function Footer() {
             <li><Link to="/commission-calculator">Commission Calculator</Link></li>
           </ul>
         </nav>
-        <nav aria-label="Guides and company">
-          <p className="footer-heading">Guides &amp; Company</p>
+        <nav aria-label="Blog and company">
+          <p className="footer-heading">Blog &amp; Company</p>
           <ul>
+            <li><Link to="/blog">Blog</Link></li>
             <li><Link to="/guides/ai-tools-for-teachers">AI Tools for Teachers</Link></li>
             <li><Link to="/guides/ai-tools-for-accountants">AI Tools for Accountants</Link></li>
             <li><Link to="/guides/ai-tools-for-real-estate-agents">AI Tools for Real Estate Agents</Link></li>

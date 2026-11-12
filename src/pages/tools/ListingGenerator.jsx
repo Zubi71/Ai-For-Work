@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Seo from '../../components/Seo'
-import AdSlot from '../../components/AdSlot'
+import RelatedArticles from '../../components/RelatedArticles'
 import ToolActions from '../../components/ToolActions'
 import { generateListing } from '../../lib/tools'
 
@@ -45,8 +45,6 @@ export default function ListingGenerator() {
           <p>Turn property details into a polished listing — headline, description and highlights — in seconds. Free, no sign-up.</p>
         </div>
       </section>
-
-      <div className="container"><AdSlot position="below_heading" /></div>
 
       <div className="container tool-layout">
         <form className="tool-form" onSubmit={onSubmit} aria-label="Listing description generator form">
@@ -95,7 +93,6 @@ export default function ListingGenerator() {
         </form>
 
         <div className="tool-output" aria-live="polite">
-        <AdSlot position="before_result" />
           {result ? (
             <>
               <h2>{result.headline}</h2>
@@ -112,7 +109,6 @@ export default function ListingGenerator() {
               <p>Fill in the form and click “Generate listing”. Try a 3-bed, 2-bath house in Austin, TX with an updated kitchen and large backyard.</p>
             </>
           )}
-        <AdSlot position="below_result" />
         </div>
       </div>
 
@@ -133,6 +129,7 @@ export default function ListingGenerator() {
               <div className="faq-item" key={f.q}><h3>{f.q}</h3><p>{f.a}</p></div>
             ))}
           </div>
+          <RelatedArticles category="realtors" />
         </div>
       </section>
     </>

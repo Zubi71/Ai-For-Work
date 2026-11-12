@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import Seo from '../components/Seo'
-import AdSlot from '../components/AdSlot'
 
 const FAQ = [
   { q: 'What is the best AI tool for teachers?', a: 'There is no single best tool. Lesson planning tools save the most time for most teachers, followed by quiz generators and grading helpers. The right choice depends on your subject, grade level and what you spend the most time on.' },
@@ -16,17 +15,17 @@ export default function GuideTeachers() {
       <Seo
         title="AI Tools for Teachers: Plan, Grade & Quiz | AidForWork"
         description="How teachers can use AI tools for lesson planning, grading and quizzes — which tools save real time, how to check their output, and what to avoid in class."
+        keywords={["AI tools for teachers", "AI lesson plan generator", "AI grading tools", "AI tools for teachers free"]}
         path="/guides/ai-tools-for-teachers"
         faq={FAQ}
-        breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Guides', path: '/guides' }, { name: 'AI Tools for Teachers', path: '/guides/ai-tools-for-teachers' }]}
+        breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Blog', path: '/blog' }, { name: 'AI Tools for Teachers', path: '/guides/ai-tools-for-teachers' }]}
       />
       <article className="article">
-        <nav className="breadcrumbs" aria-label="Breadcrumb"><Link to="/">Home</Link> / <Link to="/guides">Guides</Link> / AI Tools for Teachers</nav>
+        <nav className="breadcrumbs" aria-label="Breadcrumb"><Link to="/">Home</Link> / <Link to="/blog">Blog</Link> / AI Tools for Teachers</nav>
+        <div className="article-hero"><img src="/images/teachers.webp" alt="Teacher planning lessons on a laptop in an empty classroom" /></div>
         <h1>AI Tools for Teachers: Save Hours on Planning and Grading</h1>
-        <p className="article-meta">AidForWork Guides · For teachers · About 6 minutes to read</p>
+        <p className="article-meta">AidForWork Blog · For teachers · About 6 minutes to read</p>
         <p className="lede">AI tools can save teachers hours every week on planning, quizzes and grading — but only if you use them for the right jobs and check everything they produce. This guide explains what works, what does not, and how to start safely.</p>
-
-        <AdSlot position="below_heading" />
 
         <h2>Where AI actually saves teachers time</h2>
         <p>Teaching is full of work that is important but repetitive. Writing a lesson plan from a blank page, making a ten-question quiz, drafting feedback on thirty similar answers — these jobs take hours, and they follow patterns. That is exactly where AI tools help most.</p>
@@ -64,7 +63,6 @@ export default function GuideTeachers() {
             <div className="faq-item" key={f.q}><h3>{f.q}</h3><p>{f.a}</p></div>
           ))}
         </div>
-        <AdSlot position="below_result" />
       </article>
     </>
   )

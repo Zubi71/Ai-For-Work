@@ -6,7 +6,7 @@ export default function NotFound() {
     <>
       <Seo
         title="Page Not Found | AidForWork"
-        description="The page you were looking for does not exist on AidForWork. Try one of our free tools or guides instead."
+        description="The page you were looking for does not exist on AidForWork. Try one of our free tools or blog articles instead."
         path="/404"
       />
       <div className="container page">
@@ -18,7 +18,7 @@ export default function NotFound() {
           <li><Link to="/tools/ai-grading-quiz-generator">AI Grading &amp; Quiz Generator</Link></li>
           <li><Link to="/tools/listing-description-generator">Listing Description Generator</Link></li>
           <li><Link to="/tools/crm-cost-calculator">CRM Cost Calculator</Link></li>
-          <li><Link to="/guides">Guides</Link></li>
+          <li><Link to="/blog">Blog</Link></li>
         </ul>
       </div>
     </>

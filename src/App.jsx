@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './pages/Home'
 import LessonPlan from './pages/tools/LessonPlan'
@@ -33,7 +33,8 @@ export default function App() {
         <Route path="invoice-calculator" element={<InvoiceCalculator />} />
         <Route path="hourly-rate-calculator" element={<HourlyRateCalculator />} />
         <Route path="commission-calculator" element={<CommissionCalculator />} />
-        <Route path="guides" element={<Guides />} />
+        <Route path="blog" element={<Guides />} />
+        <Route path="guides" element={<Navigate to="/blog" replace />} />
         <Route path="guides/ai-tools-for-teachers" element={<GuideTeachers />} />
         <Route path="guides/ai-tools-for-accountants" element={<GuideAccountants />} />
         <Route path="guides/ai-tools-for-real-estate-agents" element={<GuideAgents />} />

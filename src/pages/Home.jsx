@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Seo from '../components/Seo'
-import AdSlot from '../components/AdSlot'
+import { GUIDES } from '../data/guides'
 
 /* FAQ copied from the uploaded AidForWork homepage file (8 questions). */
 const HOME_FAQ = [
@@ -22,7 +22,7 @@ const PROFESSIONS = [
     img: '/images/teachers.webp',
     alt: 'Teacher planning lessons on a laptop in an empty classroom',
     blurb: 'Planning, grading and parent emails eat your evenings. These tools hand the repetitive parts back to you — a lesson-plan first draft in seconds, grades converted instantly.',
-    points: ['Lesson Plan Outline Generator', 'Grade Calculator (points → % → letter)', 'Guides: AI prompts that actually help in class'],
+    points: ['Lesson Plan Outline Generator', 'Grade Calculator (points → % → letter)', 'Blog: AI prompts that actually help in class'],
   },
   {
     id: 'accountants',
@@ -30,7 +30,7 @@ const PROFESSIONS = [
     img: '/images/accountants.webp',
     alt: 'Accountant working with a calculator, charts and a laptop',
     blurb: 'Client books, invoices and pricing decisions fill the week. Work the numbers faster with calculators built for practice life — and price freelance work so it actually pays.',
-    points: ['Invoice Calculator with tax & discount', 'Freelance Hourly Rate Calculator', 'Guides: AI for busy-season workflows'],
+    points: ['Invoice Calculator with tax & discount', 'Freelance Hourly Rate Calculator', 'Blog: AI for busy-season workflows'],
   },
   {
     id: 'realtors',
@@ -38,7 +38,7 @@ const PROFESSIONS = [
     img: '/images/realtors.webp',
     alt: 'Real estate agent showing a bright home to a couple',
     blurb: 'Listings don’t write themselves and commissions shouldn’t be a surprise at closing. Generate MLS-ready descriptions and see your real split before the deal is done.',
-    points: ['Listing Description Generator', 'Commission & Split Calculator', 'Guides: AI follow-ups that get replies'],
+    points: ['Listing Description Generator', 'Commission & Split Calculator', 'Blog: AI follow-ups that get replies'],
   },
 ]
 
@@ -71,30 +71,6 @@ const TOOL_TABS = [
       { to: '/commission-calculator', name: 'Commission Calculator', sub: 'See the gross commission on a sale — and what actually lands in your pocket after the brokerage split.' },
       { to: '/tools/listing-description-generator', name: 'Listing Description Generator', sub: 'Turn the facts of a property into a polished, MLS-ready description in one click. Rewrite the opening line in your own voice before posting.' },
     ],
-  },
-]
-
-const GUIDES = [
-  {
-    who: 'Teachers',
-    read: '6 min read',
-    title: 'AI Tools for Teachers: 9 That Save Real Hours Every Week',
-    excerpt: 'Most ‘AI for teachers’ lists push apps you’ll open twice. This one ranks tools by the task they remove — planning, grading, differentiation and parent communication — with the free tier that actually does the job.',
-    to: '/guides/ai-tools-for-teachers',
-  },
-  {
-    who: 'Accountants',
-    read: '7 min read',
-    title: 'AI Tools for Accountants: Where They Help (and Where They Don’t)',
-    excerpt: 'AI will not sign off on a return for you — and you shouldn’t want it to. Where it genuinely helps small practices: drafting, summarizing, categorizing and checking. Here’s the honest split, plus the two calculators every freelancer should run.',
-    to: '/guides/ai-tools-for-accountants',
-  },
-  {
-    who: 'Realtors',
-    read: '5 min read',
-    title: 'AI Tools for Real Estate Agents: Listings, Follow-Ups & Splits',
-    excerpt: 'An agent’s scarcest resource is time between showings. AI earns its keep on the writing desk work — listing copy, follow-up messages, market summaries — so your hours go to clients, not keyboards.',
-    to: '/guides/ai-tools-for-real-estate-agents',
   },
 ]
 
@@ -137,8 +113,8 @@ export default function Home() {
               <a className="btn" href="#tools">
                 Try the free tools
               </a>
-              <a className="btn ghost" href="#guides">
-                Read the guides
+              <a className="btn ghost" href="#blog">
+                Read the blog
               </a>
             </div>
             <div className="hero-points">
@@ -259,12 +235,10 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="container"><AdSlot position="after_tools" /></div>
-
-      <section className="soft" id="guides">
+      <section className="soft" id="blog">
         <div className="container">
           <div className="sec-head">
-            <span className="tag">Guides</span>
+            <span className="tag">Blog</span>
             <h2>Straight answers, written for your job</h2>
             <p className="lede">
               Short, practical guides on where AI genuinely helps each profession — and where a professional should never hand over the
@@ -272,22 +246,28 @@ export default function Home() {
             </p>
           </div>
           <div className="guide-grid">
-            {GUIDES.map((g) => (
-              <article className="guide" key={g.title}>
+            {GUIDES.slice(0, 4).map((g) => (
+              <article className="guide" key={g.url}>
+                <div className="guide-img"><img src={g.image} alt={g.imageAlt} loading="lazy" /></div>
                 <div className="meta">
-                  <span className="who">{g.who}</span>
-                  <span>{g.read}</span>
+                  <span className="who">{g.tag}</span>
+                  <span>{g.readTime}</span>
                 </div>
                 <h3>
-                  <Link to={g.to}>{g.title}</Link>
+                  <Link to={g.url}>{g.title}</Link>
                 </h3>
                 <p>{g.excerpt}</p>
-                <Link className="go" to={g.to}>
-                  Read the guide →
+                <Link className="go" to={g.url}>
+                  Read the article →
                 </Link>
               </article>
             ))}
           </div>
+          <p style={{ marginTop: 28 }}>
+            <Link className="go" to="/blog">
+              View all blog articles →
+            </Link>
+          </p>
         </div>
       </section>
 
@@ -345,15 +325,13 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="container"><AdSlot position="above_cta" /></div>
-
       <section id="contact">
         <div className="container">
           <div className="cta-band">
             <div>
               <h2>New tools land profession by profession</h2>
               <p>
-                Tell us your job and we&rsquo;ll send the new calculators, generators and guides for it as they launch — starting with
+                Tell us your job and we&rsquo;ll send the new calculators, generators and blog articles for it as they launch — starting with
                 nurses, lawyers and restaurant owners.
               </p>
             </div>

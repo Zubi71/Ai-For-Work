@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import Seo from '../components/Seo'
-import AdSlot from '../components/AdSlot'
 
 const FAQ = [
   { q: 'What is the best AI tool for lawyers?', a: 'There is no single best tool. Contract review tools save the most time for most firms, followed by research assistants and drafting helpers. The right choice depends on your practice area.' },
@@ -18,17 +17,17 @@ export default function GuideLawyers() {
       <Seo
         title="AI Tools for Lawyers: Review, Research & Draft | AidForWork"
         description="How US law firms can use AI for contract review, legal research, drafting, e-discovery and client intake — where it saves time, and where it can go wrong."
+        keywords={["AI tools for lawyers", "AI contract review software", "legal AI tools", "AI for law firms"]}
         path="/guides/ai-tools-for-lawyers"
         faq={FAQ}
-        breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Guides', path: '/guides' }, { name: 'AI Tools for Lawyers', path: '/guides/ai-tools-for-lawyers' }]}
+        breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Blog', path: '/blog' }, { name: 'AI Tools for Lawyers', path: '/guides/ai-tools-for-lawyers' }]}
       />
       <article className="article">
-        <nav className="breadcrumbs" aria-label="Breadcrumb"><Link to="/">Home</Link> / <Link to="/guides">Guides</Link> / AI Tools for Lawyers</nav>
+        <nav className="breadcrumbs" aria-label="Breadcrumb"><Link to="/">Home</Link> / <Link to="/blog">Blog</Link> / AI Tools for Lawyers</nav>
+        <div className="article-hero"><img src="/images/hero.webp" alt="Professional starting his workday at a laptop in a bright modern office" /></div>
         <h1>AI Tools for Lawyers: Review Faster Without Losing Control</h1>
-        <p className="article-meta">AidForWork Guides · For US lawyers and law firms · About 6 minutes to read</p>
+        <p className="article-meta">AidForWork Blog · For US lawyers and law firms · About 6 minutes to read</p>
         <p className="lede">AI tools are now part of daily life in many US law firms — not as a replacement for lawyers, but as a drafting and review assistant for the slow, repetitive parts of the work. This guide explains where that help is real, where it breaks down, and how to start safely. Not legal advice — guidance about tools.</p>
-
-        <AdSlot position="below_heading" />
 
         <h2>Where AI actually saves lawyers time</h2>
         <p>Most legal work is not arguing in court — it is reading long contracts and discovery sets, and writing the same kinds of letters and agreements. That reading and first-draft writing follows patterns, and that is exactly where AI helps most.</p>
@@ -74,7 +73,6 @@ export default function GuideLawyers() {
             <div className="faq-item" key={f.q}><h3>{f.q}</h3><p>{f.a}</p></div>
           ))}
         </div>
-        <AdSlot position="below_result" />
       </article>
     </>
   )

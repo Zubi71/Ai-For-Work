@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Seo from '../../components/Seo'
-import AdSlot from '../../components/AdSlot'
+import RelatedArticles from '../../components/RelatedArticles'
 import { calculateInvoice, formatUSD } from '../../lib/tools'
 
 const FAQ = [
@@ -44,8 +44,6 @@ export default function InvoiceCalculator() {
         </div>
       </section>
 
-      <div className="container"><AdSlot position="below_heading" /></div>
-
       <div className="container tool-layout">
         <form className="tool-form" onSubmit={onSubmit} aria-label="Invoice calculator form">
           <div className="form-row">
@@ -75,7 +73,6 @@ export default function InvoiceCalculator() {
         </form>
 
         <div className="tool-output" aria-live="polite">
-        <AdSlot position="before_result" />
           {result ? (
             <>
               <h2>Your invoice total</h2>
@@ -94,7 +91,6 @@ export default function InvoiceCalculator() {
               <p>Fill in the form and click “Calculate invoice”. Try it with 10 hours at $50, $100 of expenses and 5% tax.</p>
             </>
           )}
-        <AdSlot position="below_result" />
         </div>
       </div>
 
@@ -113,6 +109,7 @@ export default function InvoiceCalculator() {
               <div className="faq-item" key={f.q}><h3>{f.q}</h3><p>{f.a}</p></div>
             ))}
           </div>
+          <RelatedArticles category="accountants" />
         </div>
       </section>
     </>
