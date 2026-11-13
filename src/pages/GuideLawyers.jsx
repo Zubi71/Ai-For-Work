@@ -24,7 +24,7 @@ export default function GuideLawyers() {
       />
       <article className="article">
         <nav className="breadcrumbs" aria-label="Breadcrumb"><Link to="/">Home</Link> / <Link to="/blog">Blog</Link> / AI Tools for Lawyers</nav>
-        <div className="article-hero"><img src="/images/hero.webp" alt="Professional starting his workday at a laptop in a bright modern office" /></div>
+        <div className="article-hero"><img src="/images/lawyers.webp" alt="Lawyer working on a laptop in a modern law office with a Lady Justice statue on the desk" /></div>
         <h1>AI Tools for Lawyers: Review Faster Without Losing Control</h1>
         <p className="article-meta">AidForWork Blog · For US lawyers and law firms · About 6 minutes to read</p>
         <p className="lede">AI tools are now part of daily life in many US law firms — not as a replacement for lawyers, but as a drafting and review assistant for the slow, repetitive parts of the work. This guide explains where that help is real, where it breaks down, and how to start safely. Not legal advice — guidance about tools.</p>

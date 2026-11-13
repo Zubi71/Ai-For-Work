@@ -20,6 +20,11 @@
 - AI Tools for Estate Agents: https://aidforwork.vercel.app/guides/ai-tools-for-estate-agents-uk
 - AI Contract Review Software: https://aidforwork.vercel.app/guides/ai-contract-review-software
 - AI Tools for Solicitors: https://aidforwork.vercel.app/guides/ai-tools-for-solicitors-uk
+- Best CRM for Small Business: https://aidforwork.vercel.app/guides/best-crm-for-small-business
+- AI Tools for Teachers in the UK: https://aidforwork.vercel.app/guides/ai-tools-for-teachers-uk
+- AI Tools for Architects in Canada: https://aidforwork.vercel.app/guides/ai-tools-for-architects
+- AI Tools for Accountants in the UK: https://aidforwork.vercel.app/guides/ai-tools-for-accountants-uk
+- AI Tools for Nurses: https://aidforwork.vercel.app/guides/ai-tools-for-nurses
 - All blog articles: https://aidforwork.vercel.app/blog
 
 ## About this site

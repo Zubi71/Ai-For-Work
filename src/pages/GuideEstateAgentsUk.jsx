@@ -23,7 +23,7 @@ export default function GuideEstateAgentsUk() {
       />
       <article className="article">
         <nav className="breadcrumbs" aria-label="Breadcrumb"><Link to="/">Home</Link> / <Link to="/blog">Blog</Link> / AI Tools for Estate Agents</nav>
-        <div className="article-hero"><img src="/images/realtors.webp" alt="Real estate agent showing a bright home to a couple" /></div>
+        <div className="article-hero"><img src="/images/estate-agents-uk.webp" alt="Estate agent handing house keys to a happy couple outside their new home" /></div>
         <h1>AI Tools for Estate Agents: List Faster, Follow Up Better</h1>
         <p className="article-meta">AidForWork Blog · For estate agents · About 6 minutes to read</p>
         <p className="lede">UK estate agency is a race against the clock: new instructions to win, listings to write, viewings to book, and buyers who go quiet if you wait a day. AI tools can take the repetitive writing and chasing off your desk — if you use them for the right jobs and check everything they produce.</p>

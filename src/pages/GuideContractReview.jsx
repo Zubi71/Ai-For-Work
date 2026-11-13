@@ -24,7 +24,7 @@ export default function GuideContractReview() {
       />
       <article className="article">
         <nav className="breadcrumbs" aria-label="Breadcrumb"><Link to="/">Home</Link> / <Link to="/blog">Blog</Link> / AI Contract Review Software</nav>
-        <div className="article-hero"><img src="/images/hero.webp" alt="Professional starting his workday at a laptop in a bright modern office" /></div>
+        <div className="article-hero"><img src="/images/contract-review.webp" alt="A hand signing a formal contract with a pen on a wooden desk" /></div>
         <h1>AI Contract Review Software: Faster Review Without Losing Control</h1>
         <p className="article-meta">AidForWork Blog · For lawyers · About 6 minutes to read</p>
         <p className="lede">A small US firm can spend hours on a single contract — reading every clause, checking the dates, and flagging the risks. AI contract review software does the first pass in minutes. This guide explains what it does, where it helps, where it can mislead you, and what to check before your firm pays for it. This is general information, not legal advice.</p>

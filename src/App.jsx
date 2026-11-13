@@ -17,6 +17,11 @@ import GuideLawyers from './pages/GuideLawyers'
 import GuideEstateAgentsUk from './pages/GuideEstateAgentsUk'
 import GuideContractReview from './pages/GuideContractReview'
 import GuideSolicitorsUk from './pages/GuideSolicitorsUk'
+import GuideBestCrm from './pages/GuideBestCrm'
+import GuideTeachersUk from './pages/GuideTeachersUk'
+import GuideArchitects from './pages/GuideArchitects'
+import GuideAccountantsUk from './pages/GuideAccountantsUk'
+import GuideNurses from './pages/GuideNurses'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Privacy from './pages/Privacy'
@@ -45,6 +50,11 @@ export default function App() {
         <Route path="guides/ai-tools-for-estate-agents-uk" element={<GuideEstateAgentsUk />} />
         <Route path="guides/ai-contract-review-software" element={<GuideContractReview />} />
         <Route path="guides/ai-tools-for-solicitors-uk" element={<GuideSolicitorsUk />} />
+        <Route path="guides/best-crm-for-small-business" element={<GuideBestCrm />} />
+        <Route path="guides/ai-tools-for-teachers-uk" element={<GuideTeachersUk />} />
+        <Route path="guides/ai-tools-for-architects" element={<GuideArchitects />} />
+        <Route path="guides/ai-tools-for-accountants-uk" element={<GuideAccountantsUk />} />
+        <Route path="guides/ai-tools-for-nurses" element={<GuideNurses />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="privacy-policy" element={<Privacy />} />

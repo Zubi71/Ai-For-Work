@@ -24,7 +24,7 @@ export default function GuideSolicitorsUk() {
       />
       <article className="article">
         <nav className="breadcrumbs" aria-label="Breadcrumb"><Link to="/">Home</Link> / <Link to="/blog">Blog</Link> / AI Tools for Solicitors</nav>
-        <div className="article-hero"><img src="/images/realtors.webp" alt="Real estate agent showing a bright home to a couple" /></div>
+        <div className="article-hero"><img src="/images/solicitors.webp" alt="Two solicitors in discussion with a client at a desk in a bright law office" /></div>
         <h1>AI Tools for Solicitors: Draft Faster Without Losing Control</h1>
         <p className="article-meta">AidForWork Blog · For solicitors · About 6 minutes to read</p>
         <p className="lede">AI tools can save UK solicitors hours every week on drafting, research and admin — but only if you use them for the right jobs and check everything they produce. This guide explains what works, what does not, and how to start safely in an SRA-regulated firm.</p>
