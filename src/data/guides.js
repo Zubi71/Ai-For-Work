@@ -16,6 +16,18 @@
 
 export const GUIDES = [
   {
+    url: '/guides/ai-tools-for-small-business-au',
+    title: 'AI Tools for Small Business Owners in Australia',
+    tag: 'For small business owners',
+    excerpt: 'Invoicing, cashflow, customer replies, social media, bookkeeping and scheduling — practical, workflow-first advice for Australian small business owners.',
+    image: '/images/steps.webp',
+    imageAlt: 'Small business owner reviewing charts happily at his desk with a laptop',
+    category: 'small-business',
+    readTime: '6 min read',
+    date: '2026-11-13',
+    keywords: ['AI tools for small business owners Australia', 'AI tools for small business owners', 'small business AI tools', 'AI for small businesses'],
+  },
+  {
     url: '/guides/ai-tools-for-nurses',
     title: 'AI Tools for Nurses: Less Admin, More Time for Patients',
     tag: 'For nurses',
