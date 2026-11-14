@@ -30,6 +30,7 @@
 - AI Tools for Therapists: https://aidforwork.vercel.app/guides/ai-tools-for-therapists
 - AI Tools for Freelancers: https://aidforwork.vercel.app/guides/ai-tools-for-freelancers
 - AI Tools for Marketers: https://aidforwork.vercel.app/guides/ai-tools-for-marketers
+- AI Tools for Financial Advisors: https://aidforwork.vercel.app/guides/ai-tools-for-financial-advisors
 - All blog articles: https://aidforwork.vercel.app/blog
 
 ## About this site

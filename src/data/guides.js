@@ -13,10 +13,22 @@
    architects CA -> architects.webp, nurses US -> nurses.webp,
    small business AU -> steps.webp, doctors US -> doctors.webp,
    therapists US -> therapists.webp, freelancers US -> freelancers.webp,
-   marketers US -> marketers.webp. hero.webp is used ONLY by the homepage
+   marketers US -> marketers.webp, financial advisors US -> financial-advisors.webp. hero.webp is used ONLY by the homepage
    hero, never as a guide featured image. */
 
 export const GUIDES = [
+  {
+    url: '/guides/ai-tools-for-financial-advisors',
+    title: 'AI Tools for Financial Advisors: Prep, Review & Communicate Better',
+    tag: 'For financial advisors',
+    excerpt: 'Meeting prep, portfolio review drafts, client messages, compliant notes and scheduling — how US financial advisors can use AI tools for the work around advice without risking client trust.',
+    image: '/images/financial-advisors.webp',
+    imageAlt: 'Financial advisor discussing documents with clients, laptop open',
+    category: 'financial-advisors',
+    readTime: '6 min read',
+    date: '2026-11-14',
+    keywords: ['AI tools for financial advisors', 'AI tools for financial advisors US', 'AI for financial advisors', 'financial advisor AI tools'],
+  },
   {
     url: '/guides/ai-tools-for-marketers',
     title: 'AI Tools for Marketers: Campaigns, Content & Reporting That Works',
