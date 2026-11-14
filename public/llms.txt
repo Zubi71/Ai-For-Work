@@ -31,6 +31,9 @@
 - AI Tools for Freelancers: https://aidforwork.vercel.app/guides/ai-tools-for-freelancers
 - AI Tools for Marketers: https://aidforwork.vercel.app/guides/ai-tools-for-marketers
 - AI Tools for Financial Advisors: https://aidforwork.vercel.app/guides/ai-tools-for-financial-advisors
+- AI Tools for Writers: https://aidforwork.vercel.app/guides/ai-tools-for-writers
+- AI Tools for Mortgage Brokers: https://aidforwork.vercel.app/guides/ai-tools-for-mortgage-brokers
+- AI Tools for Insurance Agents: https://aidforwork.vercel.app/guides/ai-tools-for-insurance-agents
 - All blog articles: https://aidforwork.vercel.app/blog
 
 ## About this site

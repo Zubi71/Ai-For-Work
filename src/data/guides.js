@@ -13,10 +13,47 @@
    architects CA -> architects.webp, nurses US -> nurses.webp,
    small business AU -> steps.webp, doctors US -> doctors.webp,
    therapists US -> therapists.webp, freelancers US -> freelancers.webp,
-   marketers US -> marketers.webp, financial advisors US -> financial-advisors.webp. hero.webp is used ONLY by the homepage
+   marketers US -> marketers.webp, financial advisors US -> financial-advisors.webp,
+   writers US -> writers.webp. mortgage brokers US -> mortgage-brokers.webp, insurance agents US -> insurance-agents.webp. hero.webp is used ONLY by the homepage
    hero, never as a guide featured image. */
 
 export const GUIDES = [
+  {
+    url: '/guides/ai-tools-for-insurance-agents',
+    title: 'AI Tools for Insurance Agents: Quotes, Follow-Ups & Renewals',
+    tag: 'For insurance agents',
+    excerpt: 'Quoting helpers, client follow-up and renewals, claims paperwork helpers, CRM and lead management, and compliance-friendly messages — how US insurance agents can use AI tools without giving insurance advice.',
+    image: '/images/insurance-agents.webp',
+    imageAlt: 'Insurance agent explaining a policy document to a couple at a table',
+    category: 'insurance-agents',
+    readTime: '6 min read',
+    date: '2026-11-14',
+    keywords: ['AI tools for insurance agents', 'AI tools for insurance agents US', 'AI for insurance agents', 'insurance agent AI tools'],
+  },
+  {
+    url: '/guides/ai-tools-for-mortgage-brokers',
+    title: 'AI Tools for Mortgage Brokers: Intake, Documents & Follow-Up',
+    tag: 'For mortgage brokers',
+    excerpt: 'Intake and pre-qualification helpers, document collection, rate comparison summaries, follow-up and CRM helpers, and compliance-friendly messages — how US mortgage brokers can use AI tools without giving financial advice.',
+    image: '/images/mortgage-brokers.webp',
+    imageAlt: 'Mortgage broker shaking hands with a client over house keys',
+    category: 'mortgage-brokers',
+    readTime: '6 min read',
+    date: '2026-11-14',
+    keywords: ['AI tools for mortgage brokers', 'AI tools for mortgage brokers US', 'AI for mortgage brokers', 'mortgage broker AI tools'],
+  },
+  {
+    url: '/guides/ai-tools-for-writers',
+    title: 'AI Tools for Writers: Draft Faster, Edit Sharper, Earn More',
+    tag: 'For writers',
+    excerpt: 'Drafting helpers, editing and proofreading, research and outlining, repurposing content and client work — how US writers can use AI tools for the work around writing without losing their voice.',
+    image: '/images/writers.webp',
+    imageAlt: 'Writer typing on a laptop in a bright home office',
+    category: 'writers',
+    readTime: '6 min read',
+    date: '2026-11-14',
+    keywords: ['AI tools for writers', 'AI tools for writers US', 'AI for writers', 'writing AI tools'],
+  },
   {
     url: '/guides/ai-tools-for-financial-advisors',
     title: 'AI Tools for Financial Advisors: Prep, Review & Communicate Better',

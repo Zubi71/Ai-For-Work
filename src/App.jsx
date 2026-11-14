@@ -28,6 +28,9 @@ import GuideTherapists from './pages/GuideTherapists'
 import GuideFreelancers from './pages/GuideFreelancers'
 import GuideMarketers from './pages/GuideMarketers'
 import GuideFinancialAdvisors from './pages/GuideFinancialAdvisors'
+import GuideWriters from './pages/GuideWriters'
+import GuideMortgageBrokers from './pages/GuideMortgageBrokers'
+import GuideInsuranceAgents from './pages/GuideInsuranceAgents'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Privacy from './pages/Privacy'
@@ -67,6 +70,9 @@ export default function App() {
         <Route path="guides/ai-tools-for-freelancers" element={<GuideFreelancers />} />
         <Route path="guides/ai-tools-for-marketers" element={<GuideMarketers />} />
         <Route path="guides/ai-tools-for-financial-advisors" element={<GuideFinancialAdvisors />} />
+        <Route path="guides/ai-tools-for-writers" element={<GuideWriters />} />
+        <Route path="guides/ai-tools-for-mortgage-brokers" element={<GuideMortgageBrokers />} />
+        <Route path="guides/ai-tools-for-insurance-agents" element={<GuideInsuranceAgents />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="privacy-policy" element={<Privacy />} />
