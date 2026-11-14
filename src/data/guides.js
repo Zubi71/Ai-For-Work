@@ -14,10 +14,22 @@
    small business AU -> steps.webp, doctors US -> doctors.webp,
    therapists US -> therapists.webp, freelancers US -> freelancers.webp,
    marketers US -> marketers.webp, financial advisors US -> financial-advisors.webp,
-   writers US -> writers.webp. mortgage brokers US -> mortgage-brokers.webp, insurance agents US -> insurance-agents.webp. hero.webp is used ONLY by the homepage
+   writers US -> writers.webp. mortgage brokers US -> mortgage-brokers.webp, insurance agents US -> insurance-agents.webp, HR professionals UK -> hr-professionals.webp. hero.webp is used ONLY by the homepage
    hero, never as a guide featured image. */
 
 export const GUIDES = [
+  {
+    url: '/guides/ai-tools-for-hr-professionals-uk',
+    title: 'AI Tools for HR Professionals: Screening, Hiring & Onboarding',
+    tag: 'For HR professionals',
+    excerpt: 'CV screening helpers, interview scheduling and notes, onboarding checklists, and employee communications and policy drafting — how UK HR teams can use AI tools without giving legal advice.',
+    image: '/images/hr-professionals.webp',
+    imageAlt: 'HR professional interviewing a candidate in a modern office',
+    category: 'hr',
+    readTime: '6 min read',
+    date: '2026-11-15',
+    keywords: ['AI tools for HR professionals', 'AI tools for HR professionals UK', 'AI for HR', 'HR AI tools'],
+  },
   {
     url: '/guides/ai-tools-for-insurance-agents',
     title: 'AI Tools for Insurance Agents: Quotes, Follow-Ups & Renewals',
