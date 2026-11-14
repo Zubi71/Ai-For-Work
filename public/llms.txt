@@ -28,6 +28,7 @@
 - AI Tools for Small Business Owners in Australia: https://aidforwork.vercel.app/guides/ai-tools-for-small-business-au
 - AI Tools for Doctors: https://aidforwork.vercel.app/guides/ai-tools-for-doctors
 - AI Tools for Therapists: https://aidforwork.vercel.app/guides/ai-tools-for-therapists
+- AI Tools for Freelancers: https://aidforwork.vercel.app/guides/ai-tools-for-freelancers
 - All blog articles: https://aidforwork.vercel.app/blog
 
 ## About this site

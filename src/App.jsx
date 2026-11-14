@@ -25,6 +25,7 @@ import GuideNurses from './pages/GuideNurses'
 import GuideSmallBusinessAu from './pages/GuideSmallBusinessAu'
 import GuideDoctors from './pages/GuideDoctors'
 import GuideTherapists from './pages/GuideTherapists'
+import GuideFreelancers from './pages/GuideFreelancers'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Privacy from './pages/Privacy'
@@ -61,6 +62,7 @@ export default function App() {
         <Route path="guides/ai-tools-for-small-business-au" element={<GuideSmallBusinessAu />} />
         <Route path="guides/ai-tools-for-doctors" element={<GuideDoctors />} />
         <Route path="guides/ai-tools-for-therapists" element={<GuideTherapists />} />
+        <Route path="guides/ai-tools-for-freelancers" element={<GuideFreelancers />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="privacy-policy" element={<Privacy />} />

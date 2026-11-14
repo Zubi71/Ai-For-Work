@@ -12,10 +12,22 @@
    contract review US -> contract-review.webp, best CRM US -> crm.webp,
    architects CA -> architects.webp, nurses US -> nurses.webp,
    small business AU -> steps.webp, doctors US -> doctors.webp,
-   therapists US -> therapists.webp. hero.webp is used ONLY by the homepage
+   therapists US -> therapists.webp, freelancers US -> freelancers.webp. hero.webp is used ONLY by the homepage
    hero, never as a guide featured image. */
 
 export const GUIDES = [
+  {
+    url: '/guides/ai-tools-for-freelancers',
+    title: 'AI Tools for Freelancers: Win Clients, Get Paid, Stay Organised',
+    tag: 'For freelancers',
+    excerpt: 'Proposals, invoicing, chasing payments, time tracking and content — how US freelancers can use AI tools for the business around freelancing without risking client trust.',
+    image: '/images/freelancers.webp',
+    imageAlt: 'Freelancer working on a laptop at a home desk with coffee',
+    category: 'freelancers',
+    readTime: '6 min read',
+    date: '2026-11-14',
+    keywords: ['AI tools for freelancers', 'AI tools for freelancers US', 'AI for freelancers', 'freelance AI tools'],
+  },
   {
     url: '/guides/ai-tools-for-therapists',
     title: 'AI Tools for Therapists: Less Admin, More Time for Clients',
