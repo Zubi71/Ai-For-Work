@@ -16,6 +16,18 @@
 
 export const GUIDES = [
   {
+    url: '/guides/ai-tools-for-doctors',
+    title: 'AI Tools for Doctors: Less Admin, More Time for Patients',
+    tag: 'For doctors',
+    excerpt: 'Scheduling, documentation drafts, referral letters and CME planning — how US doctors can use AI tools for admin without risking patient privacy or clinical judgement.',
+    image: '/images/doctors.webp',
+    imageAlt: 'Doctor reviewing patient notes on a tablet in a bright clinic',
+    category: 'doctors',
+    readTime: '6 min read',
+    date: '2026-11-14',
+    keywords: ['AI tools for doctors', 'AI tools for doctors US', 'AI for doctors', 'doctor AI tools'],
+  },
+  {
     url: '/guides/ai-tools-for-small-business-au',
     title: 'AI Tools for Small Business Owners in Australia',
     tag: 'For small business owners',

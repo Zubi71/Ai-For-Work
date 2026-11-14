@@ -26,6 +26,7 @@
 - AI Tools for Accountants in the UK: https://aidforwork.vercel.app/guides/ai-tools-for-accountants-uk
 - AI Tools for Nurses: https://aidforwork.vercel.app/guides/ai-tools-for-nurses
 - AI Tools for Small Business Owners in Australia: https://aidforwork.vercel.app/guides/ai-tools-for-small-business-au
+- AI Tools for Doctors: https://aidforwork.vercel.app/guides/ai-tools-for-doctors
 - All blog articles: https://aidforwork.vercel.app/blog
 
 ## About this site
