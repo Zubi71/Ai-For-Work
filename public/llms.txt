@@ -35,6 +35,7 @@
 - AI Tools for Mortgage Brokers: https://aidforwork.vercel.app/guides/ai-tools-for-mortgage-brokers
 - AI Tools for Insurance Agents: https://aidforwork.vercel.app/guides/ai-tools-for-insurance-agents
 - AI Tools for HR Professionals: https://aidforwork.vercel.app/guides/ai-tools-for-hr-professionals-uk
+- AI Tools for Recruiters: https://aidforwork.vercel.app/guides/ai-tools-for-recruiters-uk
 - All blog articles: https://aidforwork.vercel.app/blog
 
 ## About this site

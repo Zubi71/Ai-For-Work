@@ -14,10 +14,22 @@
    small business AU -> steps.webp, doctors US -> doctors.webp,
    therapists US -> therapists.webp, freelancers US -> freelancers.webp,
    marketers US -> marketers.webp, financial advisors US -> financial-advisors.webp,
-   writers US -> writers.webp. mortgage brokers US -> mortgage-brokers.webp, insurance agents US -> insurance-agents.webp, HR professionals UK -> hr-professionals.webp. hero.webp is used ONLY by the homepage
+   writers US -> writers.webp. mortgage brokers US -> mortgage-brokers.webp, insurance agents US -> insurance-agents.webp, HR professionals UK -> hr-professionals.webp, recruiters UK -> recruiters.webp. hero.webp is used ONLY by the homepage
    hero, never as a guide featured image. */
 
 export const GUIDES = [
+  {
+    url: '/guides/ai-tools-for-recruiters-uk',
+    title: 'AI Tools for Recruiters: CV Screening, Outreach & Placements',
+    tag: 'For recruiters',
+    excerpt: 'CV screening and shortlisting, candidate outreach messages, interview scheduling and scorecards, and client updates and placement tracking — how UK recruiters can use AI tools without giving legal advice.',
+    image: '/images/recruiters.webp',
+    imageAlt: 'Recruiter reviewing CVs on a laptop in an office',
+    category: 'recruiters',
+    readTime: '6 min read',
+    date: '2026-11-15',
+    keywords: ['AI tools for recruiters', 'AI tools for recruiters UK', 'AI for recruiters', 'recruiter AI tools'],
+  },
   {
     url: '/guides/ai-tools-for-hr-professionals-uk',
     title: 'AI Tools for HR Professionals: Screening, Hiring & Onboarding',

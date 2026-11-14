@@ -32,6 +32,7 @@ import GuideWriters from './pages/GuideWriters'
 import GuideMortgageBrokers from './pages/GuideMortgageBrokers'
 import GuideInsuranceAgents from './pages/GuideInsuranceAgents'
 import GuideHrUk from './pages/GuideHrUk'
+import GuideRecruitersUk from './pages/GuideRecruitersUk'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Privacy from './pages/Privacy'
@@ -75,6 +76,7 @@ export default function App() {
         <Route path="guides/ai-tools-for-mortgage-brokers" element={<GuideMortgageBrokers />} />
         <Route path="guides/ai-tools-for-insurance-agents" element={<GuideInsuranceAgents />} />
         <Route path="guides/ai-tools-for-hr-professionals-uk" element={<GuideHrUk />} />
+        <Route path="guides/ai-tools-for-recruiters-uk" element={<GuideRecruitersUk />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="privacy-policy" element={<Privacy />} />
