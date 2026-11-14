@@ -11,10 +11,23 @@
    lawyers US -> lawyers.webp, solicitors UK -> solicitors.webp,
    contract review US -> contract-review.webp, best CRM US -> crm.webp,
    architects CA -> architects.webp, nurses US -> nurses.webp,
-   small business AU -> steps.webp. hero.webp is used ONLY by the homepage
+   small business AU -> steps.webp, doctors US -> doctors.webp,
+   therapists US -> therapists.webp. hero.webp is used ONLY by the homepage
    hero, never as a guide featured image. */
 
 export const GUIDES = [
+  {
+    url: '/guides/ai-tools-for-therapists',
+    title: 'AI Tools for Therapists: Less Admin, More Time for Clients',
+    tag: 'For therapists',
+    excerpt: 'Session-note drafts, scheduling, intake forms and CE planning — how US therapists can use AI tools for admin without risking client privacy or clinical judgement.',
+    image: '/images/therapists.webp',
+    imageAlt: 'Therapist talking with a client in a calm counselling office',
+    category: 'therapists',
+    readTime: '6 min read',
+    date: '2026-11-14',
+    keywords: ['AI tools for therapists', 'AI tools for therapists US', 'AI for therapists', 'therapist AI tools'],
+  },
   {
     url: '/guides/ai-tools-for-doctors',
     title: 'AI Tools for Doctors: Less Admin, More Time for Patients',
