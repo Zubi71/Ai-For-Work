@@ -33,6 +33,13 @@ import GuideMortgageBrokers from './pages/GuideMortgageBrokers'
 import GuideInsuranceAgents from './pages/GuideInsuranceAgents'
 import GuideHrUk from './pages/GuideHrUk'
 import GuideRecruitersUk from './pages/GuideRecruitersUk'
+import GuideVeterinarians from './pages/GuideVeterinarians'
+import GuidePharmacists from './pages/GuidePharmacists'
+import GuideDentists from './pages/GuideDentists'
+import GuideEngineers from './pages/GuideEngineers'
+import GuidePhotographers from './pages/GuidePhotographers'
+import GuideEventPlanners from './pages/GuideEventPlanners'
+import GuideConsultants from './pages/GuideConsultants'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Privacy from './pages/Privacy'
@@ -77,6 +84,13 @@ export default function App() {
         <Route path="guides/ai-tools-for-insurance-agents" element={<GuideInsuranceAgents />} />
         <Route path="guides/ai-tools-for-hr-professionals-uk" element={<GuideHrUk />} />
         <Route path="guides/ai-tools-for-recruiters-uk" element={<GuideRecruitersUk />} />
+        <Route path="guides/ai-tools-for-veterinarians" element={<GuideVeterinarians />} />
+        <Route path="guides/ai-tools-for-pharmacists" element={<GuidePharmacists />} />
+        <Route path="guides/ai-tools-for-dentists" element={<GuideDentists />} />
+        <Route path="guides/ai-tools-for-engineers" element={<GuideEngineers />} />
+        <Route path="guides/ai-tools-for-photographers" element={<GuidePhotographers />} />
+        <Route path="guides/ai-tools-for-event-planners" element={<GuideEventPlanners />} />
+        <Route path="guides/ai-tools-for-consultants" element={<GuideConsultants />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="privacy-policy" element={<Privacy />} />

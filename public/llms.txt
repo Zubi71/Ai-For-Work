@@ -36,6 +36,13 @@
 - AI Tools for Insurance Agents: https://aidforwork.vercel.app/guides/ai-tools-for-insurance-agents
 - AI Tools for HR Professionals: https://aidforwork.vercel.app/guides/ai-tools-for-hr-professionals-uk
 - AI Tools for Recruiters: https://aidforwork.vercel.app/guides/ai-tools-for-recruiters-uk
+- AI Tools for Veterinarians: https://aidforwork.vercel.app/guides/ai-tools-for-veterinarians
+- AI Tools for Pharmacists: https://aidforwork.vercel.app/guides/ai-tools-for-pharmacists
+- AI Tools for Dentists: https://aidforwork.vercel.app/guides/ai-tools-for-dentists
+- AI Tools for Engineers: https://aidforwork.vercel.app/guides/ai-tools-for-engineers
+- AI Tools for Photographers: https://aidforwork.vercel.app/guides/ai-tools-for-photographers
+- AI Tools for Event Planners: https://aidforwork.vercel.app/guides/ai-tools-for-event-planners
+- AI Tools for Consultants: https://aidforwork.vercel.app/guides/ai-tools-for-consultants
 - All blog articles: https://aidforwork.vercel.app/blog
 
 ## About this site
