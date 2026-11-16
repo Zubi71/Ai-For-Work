@@ -43,6 +43,9 @@
 - AI Tools for Photographers: https://aidforwork.vercel.app/guides/ai-tools-for-photographers
 - AI Tools for Event Planners: https://aidforwork.vercel.app/guides/ai-tools-for-event-planners
 - AI Tools for Consultants: https://aidforwork.vercel.app/guides/ai-tools-for-consultants
+- AI Tools for Ecommerce Sellers: https://aidforwork.vercel.app/guides/ai-tools-for-ecommerce-sellers
+- AI Tools for Property Managers: https://aidforwork.vercel.app/guides/ai-tools-for-property-managers
+- AI Tools for Project Managers (UK): https://aidforwork.vercel.app/guides/ai-tools-for-project-managers-uk
 - All blog articles: https://aidforwork.vercel.app/blog
 
 ## About this site

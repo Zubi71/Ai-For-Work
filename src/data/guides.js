@@ -14,10 +14,46 @@
    small business AU -> steps.webp, doctors US -> doctors.webp,
    therapists US -> therapists.webp, freelancers US -> freelancers.webp,
    marketers US -> marketers.webp, financial advisors US -> financial-advisors.webp,
-   writers US -> writers.webp. mortgage brokers US -> mortgage-brokers.webp, insurance agents US -> insurance-agents.webp, HR professionals UK -> hr-professionals.webp, recruiters UK -> recruiters.webp, veterinarians US -> vets.webp, pharmacists US -> pharmacists.webp, dentists US -> dentists.webp, engineers US -> engineers.webp, photographers US -> photographers.webp, event planners US -> event-planners.webp, consultants US -> consultants.webp. hero.webp is used ONLY by the homepage
+   writers US -> writers.webp. mortgage brokers US -> mortgage-brokers.webp, insurance agents US -> insurance-agents.webp, HR professionals UK -> hr-professionals.webp, recruiters UK -> recruiters.webp, veterinarians US -> vets.webp, pharmacists US -> pharmacists.webp, dentists US -> dentists.webp, engineers US -> engineers.webp, photographers US -> photographers.webp, event planners US -> event-planners.webp, consultants US -> consultants.webp, ecommerce sellers US -> ecommerce-sellers.webp, property managers US -> property-managers.webp, project managers UK -> project-managers.webp. hero.webp is used ONLY by the homepage
    hero, never as a guide featured image. */
 
 export const GUIDES = [
+  {
+    url: '/guides/ai-tools-for-project-managers-uk',
+    title: 'AI Tools for Project Managers: Less Admin, Better Delivery',
+    tag: 'For project managers',
+    excerpt: 'Task tracking helpers, status update drafting, meeting notes and summaries, timeline planning and stakeholder communications — how UK project managers can use AI tools for the daily workflow.',
+    image: '/images/project-managers.webp',
+    imageAlt: 'Project manager leading a team meeting in an office',
+    category: 'project-managers',
+    readTime: '6 min read',
+    date: '2026-11-16',
+    keywords: ['AI tools for project managers', 'AI tools for project managers UK', 'AI for project managers', 'project manager AI tools'],
+  },
+  {
+    url: '/guides/ai-tools-for-property-managers',
+    title: 'AI Tools for Property Managers: Less Admin, Happier Tenants',
+    tag: 'For property managers',
+    excerpt: 'Tenant message drafting, maintenance request tracking, rent records, inspection checklists and listing descriptions — how US property managers can use AI tools for the daily workflow.',
+    image: '/images/property-managers.webp',
+    imageAlt: 'Property manager showing an apartment to a couple',
+    category: 'property-managers',
+    readTime: '6 min read',
+    date: '2026-11-16',
+    keywords: ['AI tools for property managers', 'AI tools for property managers US', 'AI for property managers', 'property manager AI tools'],
+  },
+  {
+    url: '/guides/ai-tools-for-ecommerce-sellers',
+    title: 'AI Tools for Ecommerce Sellers: More Sales, Less Busywork',
+    tag: 'For ecommerce sellers',
+    excerpt: 'Product listing helpers, customer message replies, inventory helpers, pricing helpers and order tracking — how US ecommerce sellers can use AI tools for the selling workflow.',
+    image: '/images/ecommerce-sellers.webp',
+    imageAlt: 'Online seller labelling parcels at a home desk with a laptop',
+    category: 'ecommerce-sellers',
+    readTime: '6 min read',
+    date: '2026-11-15',
+    keywords: ['AI tools for ecommerce sellers', 'AI tools for ecommerce sellers US', 'AI for ecommerce sellers', 'ecommerce AI tools'],
+  },
   {
     url: '/guides/ai-tools-for-consultants',
     title: 'AI Tools for Consultants: Less Admin, More Time with Clients',

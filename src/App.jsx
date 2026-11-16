@@ -40,6 +40,9 @@ import GuideEngineers from './pages/GuideEngineers'
 import GuidePhotographers from './pages/GuidePhotographers'
 import GuideEventPlanners from './pages/GuideEventPlanners'
 import GuideConsultants from './pages/GuideConsultants'
+import GuideEcommerceSellers from './pages/GuideEcommerceSellers'
+import GuidePropertyManagers from './pages/GuidePropertyManagers'
+import GuideProjectManagersUk from './pages/GuideProjectManagersUk'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Privacy from './pages/Privacy'
@@ -91,6 +94,9 @@ export default function App() {
         <Route path="guides/ai-tools-for-photographers" element={<GuidePhotographers />} />
         <Route path="guides/ai-tools-for-event-planners" element={<GuideEventPlanners />} />
         <Route path="guides/ai-tools-for-consultants" element={<GuideConsultants />} />
+        <Route path="guides/ai-tools-for-ecommerce-sellers" element={<GuideEcommerceSellers />} />
+        <Route path="guides/ai-tools-for-property-managers" element={<GuidePropertyManagers />} />
+        <Route path="guides/ai-tools-for-project-managers-uk" element={<GuideProjectManagersUk />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="privacy-policy" element={<Privacy />} />
